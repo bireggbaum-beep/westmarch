@@ -1,0 +1,305 @@
+[
+  {
+    "hexId": "-2,0",
+    "regionId": "reg_heulende_huegel",
+    "tags": ["Hügel", "Goblins", "Dungeon", "Festung", "Boss"],
+    "terrain": "Steile, felsige Hügel",
+    "difficulty": 3,
+    "pointsOfInterest": [
+      {
+        "name": "Hauptlager der Knochenbrecher-Goblins",
+        "type": "Dungeon",
+        "description": "Eine große, befestigte Höhlenfestung, Sitz des Goblin-Häuptlings 'König Grollzahn'.",
+        "explored": false,
+        "details": {
+          "objective": "Besiege König Grollzahn und zerschlage die Führung der Goblins in der Region.",
+          "keyFeatures": ["Die Höhle ist ein Labyrinth aus Gängen und Kammern.", "Es gibt mehrere bewachte Eingänge.", "Die Goblins haben primitive, aber effektive Alarmsysteme (Trommeln und Hörner)."],
+          "encounters": {
+            "main": "'König Grollzahn' (ein fetter, gerissener Goblin auf einem 'Thron' aus Schrott, der von zwei Höhlentrollen getragen wird).",
+            "secondary": "Dutzende von Goblins; Goblin-Schamanen; Patrouillen mit Wölfen."
+          },
+          "loot": {
+            "main": "Die 'Kriegsstandarte der Knochenbrecher' und die Schatzkammer des Königs mit 500 GM und diversen Edelsteinen.",
+            "minor": "Zahlreiche Waffen und Schilde von geringer Qualität."
+          },
+          "secrets": [
+            {
+              "clue": "Ein schlecht bewachter Abwasserausgang auf der Rückseite des Hügels.",
+              "revelation": "Ermöglicht den Zugang zu den unteren Ebenen der Höhle und umgeht die Haupteingänge."
+            }
+          ],
+          "layout": {
+            "area1": {
+              "name": "Das Torhaus",
+              "description": "Ein stark befestigter Haupteingang mit Fallgatter und Schießscharten."
+            },
+            "area2": {
+              "name": "Die große Halle",
+              "description": "Eine riesige Höhle, die als Versammlungs- und Essensraum für den Stamm dient."
+            },
+            "area3": {
+              "name": "Pilzfarmen & Sklavengruben",
+              "description": "Feuchte Höhlen, in denen die Goblins leuchtende Pilze züchten und einige Gefangene halten."
+            },
+            "area4": {
+              "name": "Thronsaal des Königs",
+              "description": "Der größte und am besten verteidigte Raum, in dem Grollzahn auf seinem Troll-Thron residiert."
+            }
+          }
+        },
+        "rumors": ["Tief im Westen soll eine ganze Stadt aus Höhlen sein, die von Goblins bewohnt wird."]
+      }
+    ],
+    "uniqueTreasure": null,
+    "encounters": [],
+    "resources": ["Pilzfarmen", "Schrottmetall"],
+    "connections": [
+      {
+        "linkedHexId": "-2,-1",
+        "clue": "Die Goblins werfen ihre Abfälle in eine 'Stinkegrube' im Süden."
+      }
+    ]
+  },
+  {
+    "hexId": "-2,1",
+    "regionId": "reg_heulende_huegel",
+    "tags": ["Hochebene", "Orks", "Ritualplatz", "Magischer Ort", "Geister"],
+    "terrain": "Karge Hochebene",
+    "difficulty": 2,
+    "pointsOfInterest": [
+      {
+        "name": "Feld der Ahnensteine",
+        "type": "Ritualplatz",
+        "description": "Eine Ebene, übersät mit Dutzenden von grob behauenen Steinkreisen, die in der Dämmerung leise summen.",
+        "explored": false,
+        "details": {
+          "objective": "Unterbrich das Ritual des Ork-Schamanen, der versucht, einen mächtigen Ahnengeist zu beschwören.",
+          "keyFeatures": ["Die Luft knistert vor Energie.", "Die Steine sind mit leuchtenden Runen bedeckt.", "Geisterhafte Ork-Ahnen manifestieren sich und beobachten die Szene."],
+          "encounters": {
+            "main": "Ork-Schamane 'Murgoth' und der halb beschworene 'Geist des Ur-Häuptlings'.",
+            "secondary": "2-3 Ork-Wachen, die den Schamanen schützen."
+          },
+          "loot": {
+            "main": "Murgoths 'Stab der Ahnenrufung', ein magischer Fokus.",
+            "minor": "Ritualdolch mit Gravuren, Beutel mit seltenen Kräutern."
+          },
+          "secrets": [
+            {
+              "clue": "Die Runen auf den Steinen können in einer bestimmten Reihenfolge deaktiviert werden (Intelligenzprobe ZW 14).",
+              "revelation": "Das Deaktivieren der Runen schwächt den Ahnengeist erheblich und macht den Kampf einfacher."
+            }
+          ],
+          "layout": {
+            "area1": {
+              "name": "Der äußere Ring",
+              "description": "Mehrere kleine Steinkreise, an denen die Ork-Wachen patrouillieren."
+            },
+            "area2": {
+              "name": "Der innere Kreis",
+              "description": "Ein großer zentraler Steinkreis, in dessen Mitte der Schamane das Ritual durchführt."
+            }
+          }
+        },
+        "rumors": ["Ork-Schamanen sprechen im Westen mit ihren Göttern und Ahnen."]
+      }
+    ],
+    "uniqueTreasure": null,
+    "encounters": [],
+    "resources": ["Obsidian-Splitter"],
+    "connections": []
+  },
+  {
+    "hexId": "-1,2",
+    "regionId": "reg_heulende_huegel",
+    "tags": ["Hügel", "Wald", "Orks", "Bestien", "Lager"],
+    "terrain": "Hügel mit verstreuten Wäldern",
+    "difficulty": 2,
+    "pointsOfInterest": [
+      {
+        "name": "Die Warg-Zuchtgruben",
+        "type": "Lager",
+        "description": "Eine Reihe von natürlichen Gruben, in denen Orks ihre monströsen Kampfwölfe züchten. Das Heulen ist weithin zu hören.",
+        "explored": false,
+        "details": {
+          "objective": "Sabotiere die Warg-Zucht, indem du den Alpha-Warg tötest oder befreist.",
+          "keyFeatures": ["Der Gestank von rohem Fleisch und Exkrementen ist überwältigend.", "Die Gruben sind durch schmale Felsbrücken verbunden.", "Die Orks behandeln die Warge mit extremer Brutalität."],
+          "encounters": {
+            "main": "Der 'Alpha-Warg', ein riesiger, narbenbedeckter Wolf von unnatürlicher Größe.",
+            "secondary": "Ein 'Warg-Meister' (Ork) und mehrere junge, aber aggressive Warge."
+          },
+          "loot": {
+            "main": "Der Pelz des Alpha-Wargs ist extrem wertvoll (200 GM).",
+            "minor": "Eine schwere Eisenkette, die als improvisierte Waffe dienen kann."
+          },
+          "secrets": [
+            {
+              "clue": "Der Mechanismus, der das Haupttor der größten Grube verschließt, ist rostig und kann sabotiert werden.",
+              "revelation": "Wenn der Alpha-Warg befreit wird, greift er aus Wut zuerst seine Ork-Peiniger an."
+            }
+          ],
+          "layout": {
+            "area1": {
+              "name": "Das Lager",
+              "description": "Ein kleines Ork-Lager am Rande der Gruben."
+            },
+            "area2": {
+              "name": "Die Zuchtgruben",
+              "description": "Mehrere tiefe Gruben, in denen junge Warge gehalten werden."
+            },
+            "area3": {
+              "name": "Die Arena",
+              "description": "Eine größere, zentrale Grube, in der der Alpha-Warg angekettet ist."
+            }
+          }
+        },
+        "rumors": ["Die Wölfe der Orks werden in Gruben im Norden gezüchtet und sind größer und bösartiger als normale Wölfe."]
+      }
+    ],
+    "uniqueTreasure": null,
+    "encounters": [],
+    "resources": ["Tierknochen", "Lederreste"],
+    "connections": []
+  },
+  {
+    "hexId": "-2,-1",
+    "regionId": "reg_heulende_huegel",
+    "tags": ["Schlucht", "Untote", "Aasfresser", "Gefährlich"],
+    "terrain": "Ausgetrocknetes Flussbett",
+    "difficulty": 2,
+    "pointsOfInterest": [
+      {
+        "name": "Die Knochengrube",
+        "type": "Gefährlicher Ort",
+        "description": "Ein ausgetrocknetes, felsiges Flussbett, das von den Goblins als Müll- und Leichengrube missbraucht wird. Der Gestank ist unerträglich.",
+        "explored": false,
+        "details": {
+          "objective": "Durchsuche die Grube nach etwas Wertvollem, das die Goblins weggeworfen haben könnten, und überlebe die Aasfresser.",
+          "keyFeatures": ["Der Boden ist eine rutschige Mischung aus Schlamm, Müll und Knochen.", "Wolken von Aasfliegen schwirren durch die Luft.", "Die Grube ist ein Labyrinth aus Felsbrocken und Müllhaufen."],
+          "encounters": {
+            "main": "Ein 'Aas-Golem', ein riesiges Konstrukt aus Knochen, Müll und Leichen, das durch die dunkle Magie des Ortes zum Leben erweckt wurde.",
+            "secondary": "Mehrere 'Aas-Ghoule', die sich von den Leichen ernähren; Schwärme von 'Knochensplittern' (kleine, fliegende Untote)."
+          },
+          "loot": {
+            "main": "Ein 'unverdaulicher Ring' (+1 auf Zähigkeits-Rettungswürfe), der im Inneren des Golems gefunden wird.",
+            "minor": "Die halb verrottete Ausrüstung früherer Opfer, einige wenige Münzen und Edelsteine."
+          },
+          "secrets": [
+            {
+              "clue": "Ein Teil der Grube wird von einem unterirdischen Bach durchflossen.",
+              "revelation": "Das fließende Wasser hält die Untoten fern und bietet einen relativ sicheren Rastplatz."
+            }
+          ],
+          "layout": {
+            "area1": {"name": "Der obere Rand", "description": "Hier werfen die Goblins ihren Müll hinunter. Ein guter Ort, um die Lage zu sondieren."},
+            "area2": {"name": "Die Müllfelder", "description": "Ein Labyrinth aus Abfall, in dem die Ghoule lauern."},
+            "area3": {"name": "Das Zentrum der Grube", "description": "Ein riesiger Haufen aus Knochen und Leichen, aus dem sich der Aas-Golem erhebt, wenn er gestört wird."}
+          }
+        },
+        "rumors": ["Die Goblins werfen alles, was sie loswerden wollen, in die 'Stinkegrube' im Süden."]
+      }
+    ],
+    "uniqueTreasure": null,
+    "encounters": [],
+    "resources": ["Knochenmehl", "Verrottete Ausrüstung"],
+    "connections": []
+  },
+  {
+    "hexId": "-1,0",
+    "regionId": "reg_heulende_huegel",
+    "tags": ["Hügel", "Goblins", "Dungeon", "Höhle", "Falle", "Unterschlupf"],
+    "terrain": "Hügeliges Grasland",
+    "difficulty": 1,
+    "pointsOfInterest": [
+      {
+        "name": "Goblin-Höhle: Knochenbrecher-Versteck",
+        "type": "Dungeon (Eingang)",
+        "description": "Ein grob in den Fels gehauener Höhleneingang, flankiert von primitiven Totems. Der Gestank ist schon von weitem wahrnehmbar.",
+        "explored": false,
+        "details": {
+          "objective": "Besiege den Goblin-Anführer Knorpelbeißer und finde die gestohlene Fracht des Händlers Faren.",
+          "keyFeatures": ["Boden voller Abfall und Fallen.", "Ständiges Gekicher und Streiten der Goblins.", "Alles ist notdürftig zusammengeflickt."],
+          "encounters": {"main": "Häuptling Knorpelbeißer (ein übergroßer Goblin) und 2 Leibwächter.", "secondary": "3-4 Goblin-Wachen; 2 Goblin-Fallensteller; ein Käfig mit einem Riesen-Dachs."},
+          "loot": {"main": "Farens Warenkiste (150 GM) und eine grobe Karte, die zum 'Hauptlager' (Hex -2,0) führt.", "minor": "Rostige Waffen, kleiner Heiltrank, 2W20 Kupfermünzen."},
+          "secrets": [{"clue": "Wackelige Wand hinter Abfallhaufen (Entdecken (INT) ZW 12).", "revelation": "Geheimer Gang umgeht den Fallenraum."}, {"clue": "Käfig des Riesen-Dachses ist einfach verriegelt.", "revelation": "Befreiter Dachs wütet unkontrolliert durch die Höhle."}],
+          "layout": {
+            "area1": {"name": "Eingangshöhle", "description": "Schmutzige Höhle mit Lagerfeuer und 3-4 unaufmerksamen Wachen."},
+            "area2": {"name": "Fallen-Gang", "description": "Enger Gang mit einer schlecht getarnten Fallgrube (3m tief). Bemerken (WIS) ZW 11, um sie zu sehen. Wer darauf tritt, muss einen Reflex-Rettungswurf (ZW 11) bestehen, um nicht hineinzufallen."},
+            "area3": {"name": "Gemeinschaftsraum", "description": "Schlafplätze und ein Käfig, in dem ein Riesen-Dachs gequält wird."},
+            "area4": {"name": "Thronsaal", "description": "Der Häuptling sitzt auf einem Schrott-Thron neben der gestohlenen Kiste."}
+          }
+        },
+        "rumors": ["Ein Händler in Weisslauf namens Faren bietet eine Belohnung für die Rückholung seiner Warenkiste."]
+      },
+      {
+        "name": "Verlassener Unterschlupf",
+        "type": "Find",
+        "description": "Eine kleine, natürliche Höhle, die durch einen Felssturz fast verschlossen wurde. Sie ist trocken und windgeschützt.",
+        "explored": false,
+        "details": {
+          "objective": "Finde einen sicheren Ort zum Rasten in den gefährlichen Hügeln.",
+          "keyFeatures": ["Die Höhle ist klein, aber bietet Schutz für eine Gruppe.", "Es gibt eine alte, kalte Feuerstelle."],
+          "encounters": {},
+          "loot": {"main": "Unter einem losen Stein ist eine kleine Ledertasche mit einem Heiltrank (klein) versteckt.", "minor": "Einige trockene Holzscheite."},
+          "secrets": [],
+          "layout": {}
+        },
+        "rumors": []
+      }
+    ],
+    "uniqueTreasure": null,
+    "encounters": [],
+    "resources": ["Feuerstein"],
+    "connections": [{"linkedHexId": "-2,0", "clue": "Die Karte des Goblin-Anführers zeigt den Weg zum 'Hauptlager' im Westen."}, {"linkedHexId": "-1,1", "clue": "Ein gefangener Goblin verrät Befehle vom 'Großen Auge' (Ork-Wachturm) im Nordwesten."}]
+  },
+  {
+    "hexId": "-1,1",
+    "regionId": "reg_heulende_huegel",
+    "tags": ["Hügel", "Orks", "Lager", "Bestien", "Jagdgebiet"],
+    "terrain": "Schroffe Hügelkämme",
+    "difficulty": 2,
+    "pointsOfInterest": [
+      {
+        "name": "Orkischer Wachturm 'Blutauge'",
+        "type": "Angriff/Lager",
+        "description": "Auf dem höchsten Hügelkamm steht ein grober Wachturm aus Holz und Stein, von dem eine blutrote Standarte weht.",
+        "explored": false,
+        "details": {
+          "objective": "Eliminiere den Ork-Anführer Grolnok, um die Koordination der Goblins zu schwächen.",
+          "keyFeatures": [
+            "Exzellente Fernkampfposition: Orks auf dem Turm erhalten Leichte Deckung (+1 ASW) und haben Vorteil auf ihre Fernkampfangriffe gegen Ziele am Boden.",
+            "Lager mit Warg-Käfigen am Fuß des Turms.",
+            "Laute, brutale und überhebliche Orks."
+          ],
+          "encounters": {"main": "Ork-Champion 'Grolnok' und sein persönlicher Warg.", "secondary": "4-5 Ork-Krieger."},
+          "loot": {"main": "Grolnoks 'Ork-Spaltaxt' und ein Befehlsschreiben mit Überfallplänen.", "minor": "Grober Alkohol, 3W20 Silbermünzen, schwere Armbrust."},
+          "secrets": [{"clue": "Morsche Palisade auf der Rückseite (Stärke ZW 13).", "revelation": "Ermöglicht einen Überraschungsangriff."}],
+          "layout": {
+            "area1": {"name": "Lager am Fuß des Turms", "description": "Schlammiger Bereich mit Lagerfeuer, Zelten und Warg-Käfigen."},
+            "area2": {"name": "Untere Turmebene", "description": "Lagerraum für Waffen und Vorräte."},
+            "area3": {"name": "Obere Turmplattform", "description": "Offene Plattform mit 360-Grad-Blick, wo der Anführer Wache hält."}
+          }
+        },
+        "rumors": ["Die Goblins sind nur die Hunde. Die wahren Meister sind die Orks auf den Hügelkämmen im Nordwesten."]
+      },
+      {
+        "name": "Jagdrevier der Bergziegen",
+        "type": "Find",
+        "description": "Ein abgeschlossenes kleines Tal, in dem eine Herde besonders großer und widerstandsfähiger Bergziegen lebt.",
+        "explored": false,
+        "details": {
+          "objective": "Jage die Ziegen für Nahrung und wertvolle Hörner.",
+          "keyFeatures": ["Die Ziegen sind territorial und ihre Böcke greifen Eindringlinge an.", "Das Gelände ist steil und steinig."],
+          "encounters": {"main": "Ein großer Ziegenbock mit massiven Hörnern."},
+          "loot": {"main": "Die Hörner des Bocks können zu einem Helm oder als Handelsware verarbeitet werden.", "minor": "Ausreichend Fleisch für mehrere Tage."},
+          "secrets": [],
+          "layout": {}
+        },
+        "rumors": []
+      }
+    ],
+    "uniqueTreasure": null,
+    "encounters": [],
+    "resources": ["Eisenader (bewacht)"],
+    "connections": [{"linkedHexId": "-1,2", "clue": "Die Orks sprechen von den 'Welpen-Gruben' im Norden."}, {"linkedHexId": "-2,1", "clue": "Ein Schamane trägt eine Ritualkarte zum 'Feld der Ahnensteine' im Westen."}]
+  }
+]
