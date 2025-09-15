@@ -1,0 +1,425 @@
+[
+  {
+    "hexId": "2,0",
+    "regionId": "reg_tal_von_weisslauf",
+    "tags": ["Wald", "Fluss", "Banditen", "Lager"],
+    "terrain": "Dichter werdender Wald am Fluss",
+    "difficulty": 2,
+    "pointsOfInterest": [
+      {
+        "name": "Lager der 'Flusspiraten'",
+        "type": "Angriff/Lager",
+        "description": "Ein verstecktes, durch Palisaden geschütztes Lager am Flussufer, von dem aus eine Bande von Deserteuren Handelsschiffe überfällt.",
+        "explored": false,
+        "details": {
+          "objective": "Besiege die Piratenanführerin 'Einäugige-Janna' und befreie ihre Gefangenen.",
+          "keyFeatures": ["Das Lager liegt strategisch günstig in einer Flussbiegung.", "Ein Glockenturm dient als Alarmsystem.", "Die Piraten nutzen den Fluss für schnelle Fluchtversuche."],
+          "encounters": {
+            "main": "'Einäugige-Janna' (eine erfahrene Kämpferin) und ihre zwei loyalen Maate.",
+            "secondary": "6-8 Banditen, die im Lager verteilt sind."
+          },
+          "loot": {
+            "main": "Eine Seekiste mit 300 GM und der Schatzkarte zu einem 'versunkenen Schmugglerschatz' in den Nebelmooren.",
+            "minor": "Diverse gestohlene Waren (Alkohol, Stoffe), ein Fernrohr."
+          },
+          "secrets": [
+            {
+              "clue": "Ein unter Wasser liegender Tunnel führt unter der Palisade hindurch (Wahrnehmung ZW 15 am Ufer).",
+              "revelation": "Ermöglicht das unbemerkte Eindringen in die Mitte des Lagers."
+            }
+          ],
+          "layout": {
+            "area1": {
+              "name": "Flussufer & Docks",
+              "description": "Zwei kleine Boote sind hier vertäut. Zwei Wachen patrouillieren."
+            },
+            "area2": {
+              "name": "Hauptlager",
+              "description": "Ein offener Platz mit einem großen Lagerfeuer, um das die meisten Piraten sitzen, trinken und spielen."
+            },
+            "area3": {
+              "name": "Kapitänszelt & Gefangenenkäfig",
+              "description": "Ein größeres Zelt für Janna. Daneben ein Holzkäfig mit zwei gefangenen Händlern."
+            }
+          }
+        },
+        "rumors": ["Händler klagen über Halsabschneider, die den Fluss im Osten unsicher machen."]
+      }
+    ],
+    "uniqueTreasure": null,
+    "encounters": [],
+    "resources": ["Gestohlene Waren", "Holz"],
+    "connections": []
+  },
+  {
+    "hexId": "1,1",
+    "regionId": "reg_tal_von_weisslauf",
+    "tags": ["Hügel", "Weideland", "NPC", "Geheimnis"],
+    "terrain": "Hügeliges Weideland",
+    "difficulty": 2,
+    "pointsOfInterest": [
+      {
+        "name": "Der Hof des alten Einsiedlers",
+        "type": "Sozial/Untersuchung",
+        "description": "Ein kleiner, verbarrikadierter Hof, bewohnt von einem misstrauischen, aber wissenden Einsiedler namens Silas.",
+        "explored": false,
+        "details": {
+          "objective": "Gewinne das Vertrauen von Silas, um an sein Wissen über die Wildnis oder eine spezielle Belohnung zu gelangen.",
+          "keyFeatures": ["Der Hof ist von einem hohen Zaun umgeben.", "Silas beobachtet Besucher lange, bevor er sich zeigt.", "Er züchtet ungewöhnlich große und aggressive Ziegen."],
+          "encounters": {
+            "main": "Silas (ein pensionierter Abenteurer), der die Spieler zunächst mit seiner Armbrust bedroht.",
+            "secondary": "Seine 'Wachziegen', die jeden angreifen, der über den Zaun klettert."
+          },
+          "loot": {
+            "main": "Wenn die Spieler ihm helfen (z.B. einen angreifenden Bären töten), gibt er ihnen eine 'Karte der vergessenen Pfade'. Diese Karte enthüllt einen alten, zugewachsenen Pfad, der eine direkte und sichere Reise von diesem Hex (1,1) zu den Ruinen von Alt-Weisslauf (0,2) ermöglicht. Auf dieser spezifischen Route werden Zufallsbegegnungen vermieden.",
+            "minor": "Er kann seltene Kräuter oder selbstgemachte Tränke verkaufen."
+          },
+          "secrets": [
+            {
+              "clue": "Eine verschlossene Truhe unter seinem Bett (Schlösserknacken ZW 15).",
+              "revelation": "Die Truhe enthält seine alte Abenteurerausrüstung, darunter ein magisches Kurzschwert."
+            }
+          ],
+          "layout": {
+            "area1": {
+              "name": "Der Hof",
+              "description": "Ein schlammiger Hof mit einem kleinen Stall und einem umzäunten Gemüsebeet."
+            },
+            "area2": {
+              "name": "Die Hütte",
+              "description": "Ein einziger, vollgestopfter Raum. Überall hängen getrocknete Kräuter und Tierfelle."
+            }
+          }
+        },
+        "rumors": ["Ein alter Mann in den Nordost-Hügeln soll mehr über die Wildnis wissen als jeder andere."]
+      }
+    ],
+    "uniqueTreasure": null,
+    "encounters": [],
+    "resources": ["Ziegenmilch", "Kräuter"],
+    "connections": []
+  },
+  {
+    "hexId": "0,2",
+    "regionId": "reg_tal_von_weisslauf",
+    "tags": ["Sumpf", "Ruine", "Untote", "Erkundung"],
+    "terrain": "Beginnendes Sumpfland",
+    "difficulty": 2,
+    "pointsOfInterest": [
+      {
+        "name": "Ruinen von Alt-Weisslauf",
+        "type": "Erkundung/Dungeon",
+        "description": "Die kaum sichtbaren Grundmauern der ursprünglichen Siedlung versinken im Sumpf. Irrlichter tanzen über dem Wasser.",
+        "explored": false,
+        "details": {
+          "objective": "Finde die alte, überflutete Krypta unter dem Marktplatz und berge das 'Siegel des ersten Bürgermeisters'.",
+          "keyFeatures": ["Bewegung ist durch knietiefes Wasser und Schlamm erschwert.", "Dichter Nebel hängt ständig über den Ruinen.", "Irrlichter versuchen, die Spieler in tiefere, gefährlichere Teile des Sumpfes zu locken."],
+          "encounters": {
+            "main": "Ein 'Sumpf-Scheusal' (ein großer Untoter aus Schlamm und Knochen), das die Krypta bewacht.",
+            "secondary": "Mehrere Irrlichter; ein Schwarm 'Sumpf-Piranhas' in der Krypta."
+          },
+          "loot": {
+            "main": "Das 'Siegel des ersten Bürgermeisters', ein wertvolles historisches Artefakt.",
+            "minor": "Einige verwitterte Münzen, ein wasserdichter Beutel mit Edelsteinen."
+          },
+          "secrets": [
+            {
+              "clue": "Ein bestimmter Ziegelstein in einer Mauer ist lose (Wahrnehmung ZW 14).",
+              "revelation": "Dahinter befindet sich eine Nische mit einem Tagebuch, das die letzten Tage von Alt-Weisslauf beschreibt."
+            }
+          ],
+          "layout": {
+            "area1": {
+              "name": "Die Außenbezirke",
+              "description": "Verstreute, kaum erkennbare Grundmauern von Häusern."
+            },
+            "area2": {
+              "name": "Der alte Marktplatz",
+              "description": "Ein offener, überfluteter Platz. In der Mitte ist der steinerne Eingang zur Krypta sichtbar."
+            },
+            "area3": {
+              "name": "Die Krypta",
+              "description": "Eine einzelne, überflutete Kammer. In der Mitte steht ein Sarkophag, bewacht vom Sumpf-Scheusal."
+            }
+          }
+        },
+        "rumors": ["Gelehrte glauben, Weisslauf lag einst weiter nördlich, bevor der Sumpf es verschlang."]
+      }
+    ],
+    "uniqueTreasure": null,
+    "encounters": [],
+    "resources": ["Alte Ziegelsteine", "Moos"],
+    "connections": []
+  },
+  {
+    "hexId": "2,1",
+    "regionId": "reg_tal_von_weisslauf",
+    "tags": ["Ackerland", "Bauernhof", "NPC", "Questgeber"],
+    "terrain": "Ackerland und Bauernhöfe",
+    "difficulty": 1,
+    "pointsOfInterest": [
+      {
+        "name": "Grummels Ost-Hof",
+        "type": "Sozial/Questgeber",
+        "description": "Der östlichste und isolierteste Bauernhof, bewirtschaftet von der starrköpfigen Grummel-Familie.",
+        "explored": false,
+        "details": {
+          "objective": "Überzeuge Bauer Grummel, dir Informationen über die Flusspiraten zu geben oder einen Handel einzugehen.",
+          "keyFeatures": ["Der Hof ist von einer niedrigen Steinmauer umgeben.", "Bauer Grummel ist extrem misstrauisch gegenüber Fremden.", "Die Familie besitzt einen großen, furchteinflößenden Hund namens 'Beißer'."],
+          "encounters": {
+            "main": "Bauer Grummel und seine drei Söhne, die Fremden mit Mistgabeln und Argwohn begegnen.",
+            "secondary": "Der Wachhund 'Beißer'."
+          },
+          "loot": {
+            "main": "Wenn die Spieler das Piratenproblem (Hex 2,0) lösen, erhalten sie von Grummel eine Belohnung von 50 GM und kostenlose Verpflegung.",
+            "minor": "Man kann frische Nahrung und Wasser kaufen."
+          },
+          "secrets": [
+            {
+              "clue": "Die Scheune ist fest verschlossen.",
+              "revelation": "Die Grummels verstecken dort einen verletzten Piraten, den sie gefangen genommen haben und der wertvolle Informationen hat."
+            }
+          ],
+          "layout": {
+            "area1": {
+              "name": "Das Feld",
+              "description": "Ein großes Feld, auf dem die Grummel-Söhne arbeiten und Fremde sofort melden."
+            },
+            "area2": {
+              "name": "Das Bauernhaus",
+              "description": "Ein einfaches, aber sauberes Haus, in das man nicht ohne weiteres eingelassen wird."
+            },
+            "area3": {
+              "name": "Die Scheune",
+              "description": "Eine große, verschlossene Scheune, aus der man leises Stöhnen hören kann."
+            }
+          }
+        },
+        "rumors": ["Die Grummel-Familie im Osten hasst Fremde, aber sie wissen alles, was auf dem Fluss vor sich geht."]
+      }
+    ],
+    "uniqueTreasure": null,
+    "encounters": [],
+    "resources": ["Nahrung", "Vieh"],
+    "connections": [
+      {
+        "linkedHexId": "2,0",
+        "clue": "Bauer Grummel bietet eine Belohnung für die Beseitigung des Piratenproblems im Süden."
+      }
+    ]
+  },
+  {
+    "hexId": "0,0",
+    "regionId": "reg_tal_von_weisslauf",
+    "tags": ["Stadt", "Sicher", "Handel", "Questgeber", "Heilung"],
+    "terrain": "Kleinstadt",
+    "difficulty": 0,
+    "pointsOfInterest": [
+      {
+        "name": "Weisslauf",
+        "type": "Siedlung",
+        "description": "Die letzte Bastion der Zivilisation am Rande der Wildnis. Ein Ort für Handel, Erholung und vor allem Gerüchte, die zu Abenteuern führen.",
+        "explored": true,
+        "details": {
+          "objective": "Ausrüstung beschaffen, Beute verkaufen, heilen und neue Abenteuer-Hooks (Gerüchte/Aufträge) finden.",
+          "keyFeatures": [
+            "Die Palisaden aus grobem Holz bieten ein Gefühl trügerischer Sicherheit.",
+            "Der zentrale Marktplatz ist belebt und laut.",
+            "Die Gassen abseits des Marktes sind schlammig und schlecht beleuchtet."
+          ],
+          "services": {
+            "Taverne 'Zum durstigen Wanderer'": "Ein Ort, um Gerüchte zu hören. Wirtin Helga sammelt Geschichten von zurückkehrenden Abenteurern.",
+            "Schmiede 'Grom's Eisenfaust'": "Der Zwerg Grom repariert Ausrüstung und verkauft einfache Waffen. Er ist mürrisch, aber ehrlich.",
+            "Handelsposten 'Weges Ende'": "Geleitet von Faren, einem nervösen Händler. Kauft und verkauft alles, von Rationen bis zu erbeuteten Schätzen.",
+            "Tempel der Klerikerin Elara": "Ein kleiner Schrein, wo Elara Heilung gegen eine Spende anbietet (üblich sind 10 GM pro geheiltem Lebenspunkt) und altes Wissen über die Ruinen und Flüche der Region teilt."
+          },
+          "adventure_hooks": [
+            {
+              "npc": "Faren, der Händler",
+              "hook": "Er bietet eine Belohnung für die Rückholung seiner gestohlenen Warenkiste aus der 'Goblin-Höhle' im Westen (Hex -1,0)."
+            },
+            {
+              "npc": "Elara, die Klerikerin",
+              "hook": "Sie ist besorgt über den wachsenden Fluch im 'Düsterwald' und bittet Abenteurer, die Quelle der Verderbnis zu finden, beginnend beim 'Gehängtenbaum' (Hex 0,-1)."
+            },
+            {
+              "npc": "Ein Jäger in der Taverne",
+              "hook": "Er erzählt von einer verlassenen Jägerhütte, die er nicht mehr betritt, seit er dort seltsame Spuren gesehen hat. Die Hütte liegt bei der Taverne 'Zum Wilden Eber' (Hex 1,0)."
+            }
+          ],
+          "layout": {}
+        },
+        "rumors": []
+      }
+    ],
+    "uniqueTreasure": null,
+    "encounters": [],
+    "resources": ["Sichere Rast", "Informationen", "Ausrüstung"],
+    "connections": [
+      {
+        "linkedHexId": "-1,0",
+        "clue": "Der Händler Faren vergibt einen Auftrag, seine gestohlene Ware aus der Goblin-Höhle zu holen."
+      },
+      {
+        "linkedHexId": "0,-1",
+        "clue": "Die Klerikerin Elara bittet darum, die unheilige Aura beim Gehängtenbaum im Süden zu untersuchen."
+      },
+      {
+        "linkedHexId": "1,0",
+        "clue": "Ein Jäger erzählt von seltsamen Vorkommnissen bei der Taverne 'Zum Wilden Eber' im Osten."
+      }
+    ]
+  },
+  {
+    "hexId": "1,0",
+    "regionId": "reg_tal_von_weisslauf",
+    "tags": ["Wald", "Wiesen", "Taverne", "Bauernhof", "Sicher"],
+    "terrain": "Ackerland und lichter Wald",
+    "difficulty": 1,
+    "pointsOfInterest": [
+      {
+        "name": "Taverne 'Zum Wilden Eber'",
+        "type": "Sozial/Handel",
+        "description": "Eine rustikale, aber beliebte Taverne, die außerhalb der Stadtmauern an der Oststraße liegt. Ein Treffpunkt für Jäger, Bauern und Reisende.",
+        "explored": false,
+        "details": {
+          "objective": "Sammle Gerüchte, die nicht bis in die Stadt vordringen, oder heuere einen lokalen Führer an.",
+          "keyFeatures": ["Die Wände sind mit Jagdtrophäen geschmückt.", "Der Wirt, ein ehemaliger Jäger namens Bero, ist eine gute Informationsquelle.", "Es gibt eine Zielscheibe für Axtwerfen im Hinterhof."],
+          "encounters": {"main": "Bero, der Wirt. Kann misstrauisch sein, wenn man Ärger macht.", "secondary": "Lokale Bauern, ein reisender Händler, ein prahlerischer Jäger."},
+          "loot": {"main": "Bero kann eine handgezeichnete Karte zu einem 'besonders guten Jagdgebiet' (Hex 1,1) verkaufen.", "minor": "Gutes Essen und starkes Bier."},
+          "secrets": [{"clue": "Der prahlerische Jäger verliert im Axtwerfen und wird wütend.", "revelation": "Im Streit verrät er, dass er sich nicht mehr zur 'Alten Jägerhütte' (alter POI) traut, seit 'der Boden lebendig wurde'."}],
+          "layout": {}
+        },
+        "rumors": ["Die beste Jagd gibt es im Osten, aber man muss Bero fragen, wo genau."]
+      },
+      {
+        "name": "Die Grumel-Höfe",
+        "type": "Siedlung (klein)",
+        "description": "Eine Ansammlung von drei kleinen, aber gepflegten Bauernhöfen, die Weisslauf mit Getreide und Gemüse versorgen.",
+        "explored": false,
+        "details": {
+          "objective": "Kaufe frische Vorräte oder frage nach lokalen Problemen.",
+          "keyFeatures": ["Die Bauern sind fleißig, aber wortkarg gegenüber Fremden.", "Wachhunde bellen bei jeder Annäherung."],
+          "encounters": {"main": "Bauer Grumel, der mürrische Sprecher der Höfe."},
+          "loot": {"main": "Bauer Grumel bietet eine kleine Belohnung, wenn man die Wölfe vertreibt, die nachts sein Vieh reißen.", "minor": "Möglichkeit, Rationen zu einem guten Preis zu kaufen."},
+          "secrets": [],
+          "layout": {}
+        },
+        "rumors": ["Die Bauern im Osten klagen über zunehmende Wolfsattacken."]
+      }
+    ],
+    "uniqueTreasure": null,
+    "encounters": [],
+    "resources": ["Wild", "Holz", "Frischwasser", "Nahrung"],
+    "connections": [
+      {
+        "linkedHexId": "1,1",
+        "clue": "Der Wirt Bero erzählt, dass der alte Einsiedler Silas im Nordosten (Hex 1,1) die besten Jagdgründe kennt und Karten zu vergessenen Pfaden besitzt."
+      }
+    ]
+  },
+  {
+    "hexId": "0,1",
+    "regionId": "reg_tal_von_weisslauf",
+    "tags": ["See", "Ruine", "Wasser", "Geist", "Erkundung", "Angeln"],
+    "terrain": "Feuchtwiesen und Auenwald",
+    "difficulty": 1,
+    "pointsOfInterest": [
+      {
+        "name": "Versunkener Wachturm",
+        "type": "Erkundung/Ruine",
+        "description": "Die Spitze eines alten Steinturms ragt aus einem flachen, von Algen bedeckten See. Vögel kreisen über der Ruine.",
+        "explored": false,
+        "details": {
+          "objective": "Finde einen Weg in den Turm und berge das Logbuch der alten Garnison.",
+          "keyFeatures": ["Das Wasser ist trüb und die Sicht ist schlecht.", "Der Turm ist baufällig und Klettern ist gefährlich.", "Unter der Wasseroberfläche lauern Gefahren."],
+          "encounters": {
+            "main": "Ein 'Kelpie' (ein bösartiger Wassergeist in Pferdegestalt). Als Aktion kann er eine Kreatur anstarren, die ihn sehen kann. Diese muss einen Willenskraft-Rettungswurf (ZW 13) bestehen oder ist gezwungen, sich in ihrer nächsten Runde auf dem direktesten Weg ins Wasser zu bewegen, um den Geist zu erreichen.",
+            "secondary": "Mehrere aggressive 'Riesen-Hechte'."
+          },
+          "loot": {
+            "main": "Eine wasserdichte Truhe mit dem Logbuch der Garnison, das eine Karte zu 'Alt-Weisslauf' (Hex 0,2) enthält.",
+            "minor": "Ein rostiges, aber noch brauchbares Langschwert, 50 Silbermünzen."
+          },
+          "secrets": [
+            {
+              "clue": "Bei niedrigem Wasserstand oder durch Abtasten der Mauern unter Wasser findet man eine verborgene Tür (Entdecken (INT) ZW 13).",
+              "revelation": "Die Tür führt direkt in den relativ trockenen oberen Raum."
+            }
+          ],
+          "layout": {
+            "area1": {"name": "Der See", "description": "Ein flacher, trüber See umgibt den Turm. Das Wasser ist kalt und voller Schlingpflanzen."},
+            "area2": {"name": "Überflutetes Erdgeschoss", "description": "Der Haupteingang ist eingebrochen und der Raum steht komplett unter Wasser."},
+            "area3": {"name": "Oberes Stockwerk", "description": "Größtenteils trocken, aber baufällig. Hier nistet der Kelpie bei der Truhe."}
+          }
+        },
+        "rumors": ["Fischer erzählen von einem 'Pferdegeist', der am Nord-See umgeht und Reisende in den Tod lockt."]
+      },
+      {
+        "name": "Versteckte Angelstelle",
+        "type": "Find",
+        "description": "Ein kleiner, von Schilf verdeckter Holzsteg führt zu einer ruhigen Stelle am See.",
+        "explored": false,
+        "details": {
+          "objective": "Finde einen friedlichen Ort zum Angeln.",
+          "keyFeatures": ["Das Wasser ist hier ungewöhnlich klar.", "Man ist vor dem Wind geschützt."],
+          "encounters": {},
+          "loot": {
+            "main": "Hier ist die Chance, besonders große und wertvolle Fische zu fangen (Vorteil auf Proben zum Angeln).",
+            "minor": "Ein alter, vergessener Köder in einer Kiste."
+          },
+          "secrets": [],
+          "layout": {}
+        },
+        "rumors": []
+      }
+    ],
+    "uniqueTreasure": null,
+    "encounters": [],
+    "resources": ["Fisch", "Schilf"],
+    "connections": [{"linkedHexId": "0,2", "clue": "Das Logbuch im Turm zeigt eine Karte zu den Ruinen von 'Alt-Weisslauf' im Norden."}]
+  },
+  {
+    "hexId": "0,3",
+    "regionId": "reg_tal_von_weisslauf",
+    "tags": ["Küste", "Ruine", "Leuchtturm", "Rätsel", "Untote"],
+    "terrain": "Steile Klippen am Meer",
+    "difficulty": 3,
+    "pointsOfInterest": [
+      {
+        "name": "Leuchtturm der Ahnen",
+        "type": "Dungeon/Rätsel",
+        "description": "Ein riesiger, zerfallender Leuchtturm auf einer Klippe über dem Meer. Sein Licht ist seit Jahrhunderten erloschen, doch manchmal pulsiert ein unheimliches Leuchten von seiner Spitze.",
+        "explored": false,
+        "details": {
+          "objective": "Erklimme den Leuchtturm, löse das Rätsel der alten Wächter und entzünde das 'Seelenfeuer' neu, um die Küste vor einem nahenden Übel zu warnen.",
+          "keyFeatures": ["Der Turm ist ein vertikaler Dungeon mit vielen Stockwerken.", "Geister der ehemaligen Leuchtturmwärter prüfen die Würdigkeit der Eindringlinge mit Rätseln.", "Der Wind heult durch die zerbrochenen Fenster und macht das Klettern gefährlich."],
+          "encounters": {
+            "main": "Der 'Geist des Ersten Wächters', der den Zugang zur Spitze blockiert, bis seine drei Rätsel gelöst sind.",
+            "secondary": "Skelett-Seevögel, die in den oberen Stockwerken nisten; ein 'Klippen-Scheusal' (ein aus Treibgut und Ertrunkenen geformter Golem) am Fuß des Turms."
+          },
+          "loot": {
+            "main": "Die 'Linse der Weitsicht' (ein magisches Fernrohr, das Illusionen durchschauen kann) an der Spitze des Turms.",
+            "minor": "Logbücher der Wächter, eine Seekarte mit unbekannten Inseln, ein Vorrat an alchemistischem Öl."
+          },
+          "secrets": [
+            {
+              "clue": "Die Antworten auf die Rätsel des Geistes sind in den Wandmalereien auf den verschiedenen Stockwerken versteckt.",
+              "revelation": "Nur wer den Turm aufmerksam studiert, kann die Prüfungen bestehen."
+            }
+          ],
+          "layout": {
+            "area1": {"name": "Eingangshalle", "description": "Eine große, runde Halle mit einer zentralen Treppe. Hier greift das Klippen-Scheusal an."},
+            "area2": {"name": "Die drei Prüfungsebenen", "description": "Drei Stockwerke, auf denen jeweils ein Wächtergeist mit einem Rätsel wartet (z.B. über die Gezeiten, die Sterne, die Geschichte der Region)."},
+            "area3": {"name": "Die Spitze", "description": "Die Laternenkammer des Leuchtturms. Hier wartet der Erste Wächter und hier muss das Seelenfeuer entzündet werden."}
+          }
+        },
+        "rumors": ["Das 'Chronikon von Weisslauf' erwähnt einen Leuchtturm, der als Warnsystem gegen eine Bedrohung aus dem Meer diente."]
+      }
+    ],
+    "uniqueTreasure": null,
+    "encounters": [],
+    "resources": ["Salz", "Vogeleier", "Treibholz"],
+    "connections": []
+  }
+]
