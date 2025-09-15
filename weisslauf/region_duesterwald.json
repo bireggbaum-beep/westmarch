@@ -1,1 +1,474 @@
+[
+  {
+    "hexId": "0,-3",
+    "regionId": "reg_duesterwald",
+    "tags": ["Wald", "Sumpf", "Monster", "Jagd"],
+    "terrain": "Tiefes, unberührtes Sumpfland",
+    "difficulty": 4,
+    "pointsOfInterest": [
+      {
+        "name": "Das Revier der Hydra",
+        "type": "Boss-Jagd",
+        "description": "Ein riesiger, nebliger See im Herzen des tiefsten Sumpfes. Die Bäume am Ufer sind zerbrochen und tragen Bissspuren von einem gewaltigen Tier.",
+        "explored": false,
+        "details": {
+          "objective": "Jage und besiege die legendäre Sumpf-Hydra, um an ihre wertvollen alchemistischen Komponenten zu gelangen.",
+          "keyFeatures": ["Die Hydra hat mehrere Köpfe, die nachwachsen, wenn sie nicht mit Feuer kauterisiert werden.", "Das Gelände ist tückisch und besteht aus tiefem Wasser, kleinen Inseln und versunkenen Baumstämmen.", "Die Hydra ist extrem territorial und greift alles an, was sich ihrem See nähert."],
+          "encounters": {
+            "main": "Die Sumpf-Hydra, ein riesiges, mehrköpfiges Reptil.",
+            "secondary": "Mehrere 'Hydra-Brutlinge' (kleinere, einköpfige Versionen), die im See lauern."
+          },
+          "loot": {
+            "main": "Das 'Herz der Hydra' (eine extrem potente Zutat für Regenerationstränke) und 'Hydra-Blut' (ein starkes Gift).",
+            "minor": "Die Schätze von früheren Abenteurern, die von der Hydra verschlungen wurden, am Grund des Sees."
+          },
+          "secrets": [
+            {
+              "clue": "Die Hydra meidet eine bestimmte Art von leuchtendem Sumpfmoos.",
+              "revelation": "Das Moos ist giftig für sie und kann als Waffe oder zur Schaffung sicherer Zonen verwendet werden."
+            }
+          ],
+          "layout": {
+            "area1": {"name": "Das Ufer", "description": "Ein schlammiger Uferbereich, übersät mit den Knochen der Opfer der Hydra."},
+            "area2": {"name": "Der See", "description": "Ein großer, tiefer See, das Hauptjagdgebiet der Hydra."},
+            "area3": {"name": "Die zentrale Insel", "description": "Eine kleine, felsige Insel in der Mitte des Sees, wo die Hydra ihr Nest und ihre Schätze hat."}
+          }
+        },
+        "rumors": ["Alte Legenden sprechen von einer 'unsterblichen Bestie' im tiefsten Süden des Düsterwaldes."]
+      }
+    ],
+    "uniqueTreasure": null,
+    "encounters": [],
+    "resources": ["Hydra-Schuppen", "Seltene Wasserpflanzen"],
+    "connections": []
+  },
+  {
+    "hexId": "0,-1",
+    "regionId": "reg_duesterwald",
+    "tags": ["Wald", "Verflucht", "Untote", "Geister", "Rätsel", "Friedhof"],
+    "terrain": "Dichter, verfluchter Wald",
+    "difficulty": 2,
+    "pointsOfInterest": [
+      {
+        "name": "Der Gehängtenbaum",
+        "type": "Überleben/Rätsel",
+        "description": "Eine riesige, tote Eiche, an deren Ästen Dutzende alter Stricke hängen. Eine unheilige Aura geht von diesem Ort aus.",
+        "explored": false,
+        "details": {
+          "objective": "Überlebe eine Nacht und entziffere das Geheimnis der Geister, um den Hinweis auf die Quelle des Fluchs zu erhalten.",
+          "keyFeatures": ["Rapider Temperaturabfall.", "Nächtliche geisterhafte Erscheinungen.", "Nonverbale Geister wiederholen ihre letzten Momente."],
+          "encounters": {"main": "Der 'Henker-Geist', ein zorniger Geist.", "secondary": "3-5 'Flüsternde Schatten', die Fackeln löschen."},
+          "loot": {"main": "Eine Vision von der 'versunkenen Kapelle' (Hex -1,-1).", "minor": "Ein alter Silberring."},
+          "secrets": [{"clue": "Die Geister greifen kein unschuldig vergossenes Blut an.", "revelation": "Ein Blutopfer auf den Baum lässt schwächere Geister zurückweichen."}, {"clue": "Einer der Gehenkten trägt eine Ritteruniform.", "revelation": "Sein Geist ist der Schlüssel zur Lösung."}],
+          "layout": {
+            "area1": {"name": "Die Lichtung", "description": "Kreisförmige Lichtung mit dem Baum in der Mitte."},
+            "area2": {"name": "Die Äste", "description": "Mehrere Skelette hängen in den Ästen."},
+            "area3": {"name": "Das Wurzelwerk", "description": "Unter einer Wurzel ist ein Symbol eingeritzt."}
+          }
+        },
+        "rumors": ["Die Klerikerin Elara glaubt, dass die Geister im Süd-Wald nicht böse sind, sondern eine Geschichte erzählen."]
+      },
+      {
+        "name": "Alter Friedhof",
+        "type": "Erkundung",
+        "description": "Ein kleiner, vergessener Friedhof mit verwitterten Grabsteinen, die tief im Wald verborgen sind.",
+        "explored": false,
+        "details": {
+          "objective": "Untersuche den Friedhof nach Hinweisen oder Wertgegenständen.",
+          "keyFeatures": ["Die meisten Gräber sind eingesunken und von Moos bedeckt.", "Einige Grabsteine tragen noch lesbare Namen.", "Eine einzelne Krypta ist mit einer schweren Steinplatte versiegelt."],
+          "encounters": {"main": "Wenn die Krypta geöffnet wird, entsteigt ihr ein 'Grabwächter' (ein mächtiges Skelett)."},
+          "loot": {"main": "In der Krypta befindet sich eine verrostete, aber magische Axt (+1).", "minor": "Einige Grabbeigaben von geringem Wert."},
+          "secrets": [],
+          "layout": {}
+        },
+        "rumors": []
+      }
+    ],
+    "uniqueTreasure": null,
+    "encounters": [],
+    "resources": ["Seltene Pilze"],
+    "connections": [{"linkedHexId": "1,-1", "clue": "Das Symbol am Gehängtenbaum ist identisch mit dem Wappen über einer Gruft im Südosten."}, {"linkedHexId": "-1,-1", "clue": "Eine Vision zeigt eine 'versunkene Kapelle' im Südwesten als Ursprung des Fluchs."}]
+  },
+  {
+    "hexId": "1,-1",
+    "regionId": "reg_duesterwald",
+    "tags": ["Wald", "Dungeon", "Gruft", "Spinnen", "Untote", "Rätsel"],
+    "terrain": "Dunkler Wald mit Spinnweben",
+    "difficulty": 2,
+    "pointsOfInterest": [
+      {
+        "name": "Eingang zur vergessenen Gruft",
+        "type": "Dungeon",
+        "description": "Ein alter, mit Moos und Spinnweben überwachsener Steineingang in einem Hügel. Die Steintür ist zerbrochen.",
+        "explored": false,
+        "details": {
+          "objective": "Durchquere die von Spinnen verseuchte Eingangshalle und finde das Hauptgrab des Ritters.",
+          "keyFeatures": ["Dicke, klebrige Spinnweben bedecken alles und gelten als Schwieriges Gelände (Bewegung kostet doppelt).", "Ständiges Klicken von Chitin-Beinen.", "Alte, menschliche Architektur."],
+          "encounters": {"main": "Die 'Brutmutter' (Riesenspinne), die den Durchgang blockiert.", "secondary": "'Jägerspinnen'; Schwärme von Jungspinnen."},
+          "loot": {"main": "Das 'Amulett des stillen Wächters' am Sarkophag.", "minor": "Edelsteine, Rolle mit Schutzzauber gegen Gift."},
+          "secrets": [{"clue": "Brüchige Wand hinter einem Wandteppich (Entdecken (INT) ZW 14).", "revelation": "Führt in eine übersehene Schatzkammer."}],
+          "layout": {
+            "area1": {"name": "Eingangshalle & Nest", "description": "Große Halle voll mit Spinnweben und Eiersäcken."},
+            "area2": {"name": "Korridor der Kokons", "description": "Gang gesäumt mit eingesponnenen Körpern."},
+            "area3": {"name": "Kammer der Brutmutter", "description": "Die riesige Brutmutter sitzt auf ihren Eiern und versperrt den Weg."},
+            "area4": {"name": "Die Hauptgruft", "description": "Ruhiger, staubiger Raum mit einem Sarkophag, auf dem das Amulett liegt."}
+          }
+        },
+        "rumors": ["Ein Kräutersammler faselte von 'Beinen im Schatten' und 'kalten Steinen, die atmen' im Südostwald."]
+      },
+      {
+        "name": "Mysteriöse Steinstatuen",
+        "type": "Find",
+        "description": "Eine Gruppe von drei Steinstatuen, die drei Krieger in trauernder Pose darstellen. Sie scheinen einen unsichtbaren Punkt in der Mitte anzustarren.",
+        "explored": false,
+        "details": {
+          "objective": "Finde das Geheimnis der Statuen heraus.",
+          "keyFeatures": ["Die Statuen sind von außergewöhnlicher Handwerkskunst.", "Sie sind seltsam unberührt von Moos oder Verwitterung."],
+          "encounters": {},
+          "loot": {"main": "Wenn man einen wertvollen Gegenstand (z.B. Edelstein) in die Mitte legt, gewähren die Geister der Krieger einen Segen (einmalig Vorteil auf den nächsten Angriffswurf).", "minor": null},
+          "secrets": [],
+          "layout": {}
+        },
+        "rumors": []
+      }
+    ],
+    "uniqueTreasure": {"name": "Amulett des stillen Wächters", "description": "Ein Eisenamulett, das kalt wird, wenn Untote in der Nähe sind.", "location": "In den tieferen Kammern der Gruft."},
+    "encounters": [],
+    "resources": ["Spinnenseide", "Gift"],
+    "connections": [{"linkedHexId": "-1,-1", "clue": "Ein Tagebuch in der Gruft erwähnt, dass der wahre Fluch von einer 'versunkenen Kapelle' im Westen ausgeht."}]
+  },
+  {
+    "hexId": "-2,-2",
+    "regionId": "reg_duesterwald",
+    "tags": ["Berge", "Wald", "Höhle", "Riesen", "NPC"],
+    "terrain": "Ausläufer der Steinzahn-Berge",
+    "difficulty": 3,
+    "pointsOfInterest": [
+      {
+        "name": "Höhle des Zyklopen-Schmieds",
+        "type": "Sozial/Handel",
+        "description": "Eine gewaltige Höhle am Fuße eines Berges, aus der das rhythmische Schlagen eines riesigen Hammers zu hören ist. Die Hitze einer gewaltigen Esse strömt aus dem Eingang.",
+        "explored": false,
+        "details": {
+          "objective": "Überzeuge den mürrischen Zyklopen-Schmied Arges, eine Waffe oder Rüstung von legendärer Qualität zu schmieden.",
+          "keyFeatures": [
+            "Arges ist ein Meister seines Fachs, aber verachtet 'kleine Leute'.",
+            "Seine Schmiede wird von einem gebundenen Feuerelementar betrieben.",
+            "Er verlangt seltene Materialien oder die Erfüllung einer gefährlichen Aufgabe als Bezahlung.",
+            "Für seine besten Stücke, so murmelt er, benötigt er 'Sternenmetall', das nur von den höchsten Gipfeln stammt (Hinweis auf Hex -3,1)."
+          ],
+          "encounters": {
+            "main": "Arges, der Zyklop-Schmied. Er ist nicht von Natur aus feindselig, aber extrem reizbar und gewalttätig, wenn er verärgert wird.",
+            "secondary": "Der gebundene Feuerelementar, der ausbricht, wenn seine Fesseln gelöst werden."
+          },
+          "loot": {
+            "main": "Die Möglichkeit, eine maßgeschneiderte magische Waffe oder Rüstung zu erhalten.",
+            "minor": "Überschüssige Barren aus seltenen Metallen."
+          },
+          "secrets": [
+            {
+              "clue": "Der Zyklop hat eine Schwäche für gut gebrautes Zwergenbier.",
+              "revelation": "Ein Fass Zwergenbier als Geschenk kann seine Laune erheblich verbessern."
+            }
+          ],
+          "layout": {
+            "area1": {"name": "Vorplatz der Höhle", "description": "Ein Bereich voller riesiger Metallbarren, halbfertiger Waffen und Schlackehaufen."},
+            "area2": {"name": "Die Große Schmiede", "description": "Eine riesige Höhle, dominiert von einer gewaltigen Esse, einem Amboss und dem Zyklopen bei der Arbeit."}
+          }
+        },
+        "rumors": ["Arges murmelt manchmal von einem 'Fürsten der Fäulnis', dessen Zerstörung etwas 'noch Älteres' tief unter der Erde aufgeweckt hat (Hinweis auf Hex -1,-3)."]
+      },
+      {
+        "name": "Vergessener Grenzstein",
+        "type": "Find",
+        "description": "Ein alter, umgestürzter Grenzstein, der die Grenze zwischen dem Königreich der Menschen und dem alten Reich der Riesen markiert.",
+        "explored": false,
+        "details": {
+          "objective": "Untersuche den Stein.",
+          "keyFeatures": ["Der Stein ist mit Runen der Menschen und der Riesen beschriftet.", "Er strahlt eine schwache, beruhigende Magie aus."],
+          "encounters": {},
+          "loot": {
+            "main": "Wer die Runen beider Völker entziffern kann, versteht den alten Pakt und erhält einen permanenten Bonus von +1 auf alle Charisma-Proben gegenüber Riesen und Zyklopen.",
+            "minor": null
+          },
+          "secrets": [],
+          "layout": {}
+        },
+        "rumors": []
+      }
+    ],
+    "uniqueTreasure": null,
+    "encounters": [],
+    "resources": ["Obsidian", "Vulkangestein"],
+    "connections": []
+  },
+  {
+    "hexId": "-1,-3",
+    "regionId": "reg_duesterwald",
+    "tags": ["Untergrund", "Dungeon", "Verderbnis", "Horror"],
+    "terrain": "Instabiler Boden über Höhlensystem",
+    "difficulty": 5,
+    "pointsOfInterest": [
+      {
+        "name": "Der Schlund zur Unterwelt",
+        "type": "Großer Dungeon",
+        "description": "Ein riesiger, klaffender Abgrund, der sich nach der Zerstörung des Fürsten der Fäulnis aufgetan hat. Aus der Tiefe dringen unbeschreibliche Geräusche und ein kalter, toter Wind.",
+        "explored": false,
+        "details": {
+          "objective": "Steige in die prähistorischen Tiefen hinab und versuche, den Riss zur Unterwelt zu versiegeln, bevor noch schrecklichere Dinge hindurchkommen.",
+          "keyFeatures": [
+            "Die Umgebung ist absolut fremdartig und nicht-euklidisch.",
+            "Verzerrte Realität: Fernkampfangriffe haben hier Nachteil. Jeder gewirkte Zauber hat eine 25% Chance (1-5 auf W20), einen unvorhergesehenen Nebeneffekt auszulösen (SL-Entscheid).",
+            "Der Abstieg ist ein Kampf gegen den eigenen Verstand."
+          ],
+          "encounters": {
+            "main": "Ein 'Fragment des Chaos', eine körperlose Entität, die die Ängste der Charaktere gegen sie verwendet.",
+            "secondary": "'Gedanken-Larven', 'Schatten-Tentakel' und andere Aberrationen."
+          },
+          "loot": {
+            "main": "Ein 'Herz der Leere', ein Artefakt, das entweder den Riss versiegeln oder für unvorstellbare Macht missbraucht werden kann.",
+            "minor": "Kristalle, die mentale Energie speichern können."
+          },
+          "secrets": [
+            {
+              "clue": "Einige Wände scheinen auf Willenskraft zu reagieren, nicht auf physische Kraft.",
+              "revelation": "Starke mentale Konzentration kann neue Wege öffnen oder alte verschließen."
+            }
+          ],
+          "layout": {
+            "area1": {"name": "Der Rand des Abgrunds", "description": "Ein spiralförmiger Pfad führt in die Dunkelheit."},
+            "area2": {"name": "Die Hallen des Flüsterns", "description": "Gänge, in denen die schlimmsten Ängste der Charaktere als Echos widerhallen."},
+            "area3": {"name": "Das pulsierende Herz", "description": "Eine zentrale Kaverne, in der das Fragment des Chaos am Riss zur Unterwelt zerrt."}
+          }
+        },
+        "rumors": ["Nach der Zerstörung des Fluchs erzählen die Geister von einem 'noch älteren Übel' tief unter der Erde."]
+      }
+    ],
+    "uniqueTreasure": null,
+    "encounters": [],
+    "resources": ["Reine Leere (alchemistische Zutat)"],
+    "connections": []
+  },
+  {
+    "hexId": "-1,-1",
+    "regionId": "reg_duesterwald",
+    "tags": ["Wald", "Sumpf", "Dungeon", "Untote", "Boss", "Verflucht"],
+    "terrain": "Dunkler, sumpfiger Wald",
+    "difficulty": 3,
+    "pointsOfInterest": [
+      {
+        "name": "Die Kapelle der ewigen Ruhe",
+        "type": "Dungeon",
+        "description": "Eine kleine, zerfallene Kapelle, die im Sumpf versinkt. Das Zentrum des untoten Fluchs.",
+        "explored": false,
+        "details": {
+          "objective": "Dringe in die Kapelle ein, besiege den 'Verfluchten Ritter' und zerstöre das 'Herz des Fluchs'.",
+          "keyFeatures": ["Die Kapelle versinkt langsam im Sumpf; der Boden ist instabil.", "Ein fahles, unheiliges Licht scheint aus den zerbrochenen Fenstern.", "Die Stille ist absolut und wird nur durch das Plätschern des Sumpfwassers gebrochen."],
+          "encounters": {
+            "main": "Der 'Verfluchte Ritter', der untote Wächter der Kapelle.",
+            "secondary": "Mehrere Ghule, die aus dem Sumpf aufsteigen; Gespenster in der Krypta."
+          },
+          "loot": {
+            "main": "Das 'Herz des Fluchs' (ein geschändetes Relikt) und das Schwert des Ritters, 'Eidbrecher'.",
+            "minor": "Goldene Altar-Gegenstände (Kelch, Kerzenständer)."
+          },
+          "secrets": [
+            {
+              "clue": "Hinter dem Altar befindet sich eine lose Steinplatte.",
+              "revelation": "Sie verbirgt eine kleine Nische mit dem Tagebuch des Priesters, das die Geschichte des Fluchs erzählt."
+            }
+          ],
+          "layout": {
+            "area1": {
+              "name": "Der Kapellenhof",
+              "description": "Ein Friedhof mit halb versunkenen Gräbern. Ghule erheben sich aus dem Schlamm."
+            },
+            "area2": {
+              "name": "Das Kirchenschiff",
+              "description": "Der Hauptraum der Kapelle. Die Kirchenbänke sind zerbrochen. Hier patrouilliert der Verfluchte Ritter."
+            },
+            "area3": {
+              "name": "Die Krypta",
+              "description": "Eine Treppe führt hinab in eine überflutete Krypta, wo das 'Herz des Fluchs' auf einem Altar pulsiert."
+            }
+          }
+        },
+        "rumors": ["Der Fluch des Waldes hat einen Ursprung: ein entweihter heiliger Ort, der im Sumpf versinkt."]
+      }
+    ],
+    "uniqueTreasure": null,
+    "encounters": [],
+    "resources": ["Verdorbenes Weihwasser"],
+    "connections": []
+  },
+  {
+    "hexId": "0,-2",
+    "regionId": "reg_duesterwald",
+    "tags": ["Wald", "Dornen", "Übernatürlich", "Pflanzenmonster"],
+    "terrain": "Verdrehter, dorniger Wald",
+    "difficulty": 3,
+    "pointsOfInterest": [
+      {
+        "name": "Das Dickicht der flüsternden Dornen",
+        "type": "Übernatürlicher Ort",
+        "description": "Ein undurchdringliches Dickicht aus lebenden, scharfen Dornenranken, das etwas in seiner Mitte zu schützen scheint.",
+        "explored": false,
+        "details": {
+          "objective": "Finde einen Weg ins Zentrum des Dickichts und entdecke, was es schützt.",
+          "keyFeatures": [
+            "Gefährliches Gelände: Jede Runde, die ein Charakter im Dickicht verbringt, muss er einen Reflex-Rettungswurf (ZW 12) bestehen oder erleidet 1W4 Schaden.",
+            "Leises, unverständliches Flüstern geht von den Ranken aus.",
+            "Der Boden ist mit den rostigen Rüstungen und Waffen früherer Opfer übersät."
+          ],
+          "encounters": {
+            "main": "Der 'Dornen-Wächter', ein riesiges, humanoides Pflanzenmonster im Zentrum.",
+            "secondary": "Mehrere 'Blutranken'. Sie greifen mit Angriff +3 an. Bei einem Treffer wird das Ziel 'Festgesetzt' (kann sich nicht bewegen). Ein Charakter kann sich mit einer Aktion und einer erfolgreichen Stärke-Probe (ZW 12) befreien."
+          },
+          "loot": {
+            "main": "Ein 'Herzholz-Zweig', eine mächtige alchemistische Zutat, wächst im Zentrum.",
+            "minor": "Die Ausrüstung der früheren Opfer (eine magische Rüstung, diverse Waffen)."
+          },
+          "secrets": [
+            {
+              "clue": "Die Dornen ziehen sich vor Feuer zurück.",
+              "revelation": "Der Einsatz von Feuer (Fackeln, Feuerzauber) kann einen temporären Pfad durch das Dickicht schaffen."
+            }
+          ],
+          "layout": {
+            "area1": {
+              "name": "Der äußere Rand",
+              "description": "Ein Gürtel aus dornigem Gestrüpp, in dem die ersten Blutranken lauern."
+            },
+            "area2": {
+              "name": "Das Labyrinth",
+              "description": "Ein Labyrinth aus sich bewegenden Dornenwänden."
+            },
+            "area3": {
+              "name": "Das Zentrum",
+              "description": "Eine kleine, ruhige Lichtung, in der der Herzholz-Zweig wächst, bewacht vom Dornen-Wächter."
+            }
+          }
+        },
+        "rumors": ["Tief im Süden soll ein Wald leben, der Eindringlinge bei lebendigem Leib verschlingt."]
+      }
+    ],
+    "uniqueTreasure": null,
+    "encounters": [],
+    "resources": ["Herzholz-Zweig"],
+    "connections": []
+  },
+  {
+    "hexId": "2,-1",
+    "regionId": "reg_duesterwald",
+    "tags": ["Wald", "Hügel", "Flugmonster", "Boss"],
+    "terrain": "Hügeliger Waldrand",
+    "difficulty": 2,
+    "pointsOfInterest": [
+      {
+        "name": "Nest des Schreckensvogels",
+        "type": "Lauerplatz/Boss",
+        "description": "Ein riesiges Nest aus Knochen, Ästen und den Überresten von Karren in den Wipfeln der höchsten Bäume.",
+        "explored": false,
+        "details": {
+          "objective": "Besiege den Schreckensvogel (Roc) und plündere sein Nest.",
+          "keyFeatures": ["Das Nest ist nur durch Klettern auf die riesigen Bäume erreichbar.", "Der Vogel ist meist auf der Jagd und kehrt nur zur Fütterung seiner Jungen zurück.", "Der Boden unter dem Nest ist mit den Knochen seiner Opfer übersät."],
+          "encounters": {
+            "main": "Ein 'Schreckensvogel' (Roc), ein gigantischer Raubvogel, der Charaktere greifen und fallen lassen kann.",
+            "secondary": "Zwei Jungvögel im Nest, die zwar nicht fliegen können, aber aggressiv sind."
+          },
+          "loot": {
+            "main": "Die 'Schreckensklaue', die zu einer mächtigen Waffe verarbeitet werden kann, und ein unbeschädigtes, riesiges Ei (sehr wertvoll).",
+            "minor": "Die Überreste einer Karawane, darunter eine verschlossene Geldkassette (250 GM)."
+          },
+          "secrets": [
+            {
+              "clue": "Der Vogel reagiert extrem aggressiv auf das Geräusch von Glocken (erinnert ihn an weglaufendes Vieh).",
+              "revelation": "Das Läuten einer Glocke kann den Vogel anlocken, aber auch in einen unkontrollierbaren Zorn versetzen, der ihn unvorsichtig macht."
+            }
+          ],
+          "layout": {
+            "area1": {
+              "name": "Der Knochenhügel",
+              "description": "Der Bereich unter den Nistbäumen, übersät mit den Knochen von Kühen, Pferden und Humanoiden."
+            },
+            "area2": {
+              "name": "Die Nistbäume",
+              "description": "Drei riesige, miteinander verwachsene Bäume, die das Nest tragen. Das Klettern ist eine Herausforderung."
+            },
+            "area3": {
+              "name": "Das Nest",
+              "description": "Eine riesige Plattform aus Ästen und Knochen, in der die Jungvögel und die Schätze liegen."
+            }
+          }
+        },
+        "rumors": ["Hirten verlieren Vieh an ein geflügeltes Ungetüm vom Ostrand des Waldes, das 'so groß wie ein Haus' sein soll."]
+      }
+    ],
+    "uniqueTreasure": null,
+    "encounters": [],
+    "resources": ["Riesige Eierschalen", "Knochen"],
+    "connections": []
+   },
+  {
+    "hexId": "1,-2",
+    "regionId": "reg_duesterwald",
+    "tags": ["Wald", "Schlucht", "Brücke", "Flugmonster"],
+    "terrain": "Wald mit tiefen Schluchten",
+    "difficulty": 2,
+    "pointsOfInterest": [
+      {
+        "name": "Die verlassene Holzfällerbrücke",
+        "type": "Hindernis/Erkundung",
+        "description": "Eine morsche, halb eingestürzte Holzbrücke über eine tiefe Schlucht. Der Wind pfeift durch die fehlenden Planken.",
+        "explored": false,
+        "details": {
+          "objective": "Überquere die Schlucht sicher, ohne den Zorn der Harpyien auf dich zu ziehen oder in die Tiefe zu stürzen.",
+          "keyFeatures": [
+            "Die Brücke ist extrem instabil. Jede Runde, in der ein Charakter eine Bewegung oder einen Kampf auf der Brücke ausführt, erfordert einen Reflex-Rettungswurf (ZW 12), um nicht zu stürzen.",
+            "Die Schlucht ist über 50 Meter tief.",
+            "Die Harpyien nisten in den Klippen unter der Brücke."
+          ],
+          "encounters": {
+            "main": "Ein Schwarm von 3-5 Harpyien. Ihr Gesang zwingt alle Kreaturen, die ihn hören, zu einem Willenskraft-Rettungswurf (ZW 14). Bei einem Fehlschlag ist die Kreatur betört und muss ihre Bewegung nutzen, um auf dem direktesten Weg auf die Harpyien zuzugehen, was zum Sturz von der Brücke führen kann.",
+            "secondary": "Keine."
+          },
+          "loot": {
+            "main": "Im Nest der Harpyien findet sich ein 'Talisman des freien Falls', der einmal pro Tag den Zauber 'Federfall' auslöst.",
+            "minor": "Glänzende Gegenstände, die die Harpyien gestohlen haben (Schmuck, polierte Steine)."
+          },
+          "secrets": [
+            {
+              "clue": "Der Gesang der Harpyien kann durch laute Geräusche oder das Zustopfen der Ohren neutralisiert werden.",
+              "revelation": "Charaktere, die sich die Ohren verstopfen, sind immun gegen den betörenden Gesang, haben aber Nachteil auf Proben, die auf Gehör basieren."
+            }
+          ],
+          "layout": {
+            "area1": {
+              "name": "Der Brückenkopf",
+              "description": "Der sichere Anfang der Brücke. Von hier aus ist das Ausmaß des Schadens sichtbar."
+            },
+            "area2": {
+              "name": "Die Brückenmitte",
+              "description": "Der gefährlichste Abschnitt, wo mehrere Planken fehlen und die Harpyien angreifen."
+            },
+            "area3": {
+              "name": "Das Harpyiennest",
+              "description": "Ein übelriechendes Nest an einem Felsvorsprung unter der Brücke, erreichbar durch Klettern."
+            }
+          }
+        },
+        "rumors": ["Holzfäller wurden einst von 'singenden Todesengeln' von einer Brücke im Südosten vertrieben."]
+      }
+    ],
+    "uniqueTreasure": null,
+    "encounters": [],
+    "resources": ["Seltene Vogelfedern"],
+    "connections": [
+      {
+        "linkedHexId": "2,-1",
+        "clue": "Von der Brücke aus kann man ein riesiges Nest in den Baumwipfeln im Nordosten erkennen."
+      }
+    ]
+   }
+]
 
