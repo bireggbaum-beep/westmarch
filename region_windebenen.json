@@ -1,0 +1,123 @@
+{
+  "regionName": "Windebenen",
+  "regionData": {
+    "defaultTerrain": "Grasland",
+    "encounterTables": {
+      "day": "ebenen_tag_mittel",
+      "night": "ebenen_nacht_mittel"
+    },
+    "travelModifier": {
+      "difficultyClass": 10,
+      "attribute": "CON"
+    }
+  },
+  "hexes": [
+    {
+      "id": "0910",
+      "terrain": "Sanfte Hügel",
+      "poi": null,
+      "notes": "Übergang vom Tal zu den offenen Ebenen. Weite Sicht in alle Richtungen.",
+      "resources": ["Wildgräser", "Steppenkräuter"],
+      "isRevealed": false
+    },
+    {
+      "id": "0810",
+      "terrain": "Offene Steppe",
+      "poi": {
+        "name": "Steinkreis der Winde",
+        "type": "Landmark",
+        "status": "undiscovered",
+        "shortDesc": "Ein alter Steinkreis, der von den Nomadenstämmen als heiliger Ort verehrt wird. Der Wind singt hier seltsame Melodien.",
+        "challengeRating": 2,
+        "linkToDetail": "locations/steinkreis_winde.md"
+      },
+      "connections": [
+        {
+          "targetHex": "0710",
+          "type": "rumor",
+          "trigger": "Sprich mit den Zentauren am Steinkreis.",
+          "description": "Die Zentauren erzählen von einem 'Ort, wo der Wind geboren wird' - einem Tal im Norden, wo Luftgeister tanzen.",
+          "revealed": false
+        }
+      ],
+      "notes": "Treffpunkt verschiedener Nomadenstämme bei Vollmond.",
+      "isRevealed": false
+    },
+    {
+      "id": "0710",
+      "terrain": "Windtal",
+      "poi": {
+        "name": "Tal der Luftgeister",
+        "type": "Event",
+        "status": "undiscovered",
+        "shortDesc": "Ein schmales Tal, in dem ständig starke Winde wehen. Luftelementare tanzen hier bei Sturm.",
+        "challengeRating": 4,
+        "linkToDetail": "locations/tal_luftgeister.md"
+      },
+      "resources": ["Windkristalle", "Sturmfedern"],
+      "notes": "Bei Sturm erwachen hier mächtige Luftelementare. Bei ruhigem Wetter ist es friedlich.",
+      "isRevealed": false
+    },
+    {
+      "id": "0911",
+      "poi": null,
+      "notes": "Weites Grasland mit vereinzelten Baumgruppen. Beliebtes Jagdgebiet der Nomaden.",
+      "resources": ["Wildbret", "Büffelfelle"],
+      "isRevealed": false
+    },
+    {
+      "id": "0811",
+      "terrain": "Wasserloch",
+      "poi": {
+        "name": "Oase der drei Quellen",
+        "type": "Landmark",
+        "status": "undiscovered",
+        "shortDesc": "Eine natürliche Oase mit drei sprudelnden Quellen. Neutraler Boden für alle Stämme.",
+        "challengeRating": 1,
+        "linkToDetail": "locations/oase_drei_quellen.md"
+      },
+      "connections": [
+        {
+          "targetHex": "0712",
+          "type": "npc",
+          "trigger": "Sprich mit dem Wasserträger Silbermähne.",
+          "description": "Der alte Zentaur erzählt von Räubern, die eine Karawane überfallen haben. Die Beute soll in Höhlen im Süden versteckt sein.",
+          "revealed": false
+        }
+      ],
+      "resources": ["Frischwasserquelle", "Heilkräuter", "Salzablagerungen"],
+      "notes": "Wichtiger Treffpunkt für Handel zwischen den Stämmen.",
+      "isRevealed": false
+    },
+    {
+      "id": "0712",
+      "terrain": "Felsige Hügel",
+      "poi": {
+        "name": "Räuberhöhlen",
+        "type": "Lair",
+        "status": "undiscovered",
+        "shortDesc": "Ein Netzwerk natürlicher Höhlen, das von Banditen als Versteck genutzt wird.",
+        "challengeRating": 3,
+        "linkToDetail": "locations/raeuberhoehlen.md"
+      },
+      "resources": ["Gestohlene Waren", "Versteckte Schätze"],
+      "notes": "Die Banditen überfallen Karawanen und verstecken ihre Beute hier.",
+      "isRevealed": false
+    },
+    {
+      "id": "0610",
+      "poi": null,
+      "resources": ["Büffelfleisch", "Büffelfelle", "Steppengras"],
+      "notes": "Endlose Grasebenen, soweit das Auge reicht. Hier ziehen große Büffelherden.",
+      "isRevealed": false
+    },
+    {
+      "id": "0611",
+      "poi": null,
+      "resources": ["Wildpferde (zähmbar)", "Präriekräuter", "Vogelfedern"],
+      "notes": "Leicht hügeliges Grasland mit vereinzelten Wildpferdeherden.",
+      "isRevealed": false
+    }
+  ]
+}
+

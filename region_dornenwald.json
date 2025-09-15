@@ -1,0 +1,119 @@
+{
+  "regionName": "Dornenwald",
+  "regionData": {
+    "defaultTerrain": "Dichter Wald",
+    "encounterTables": {
+      "day": "wald_tag_leicht",
+      "night": "wald_nacht_mittel"
+    },
+    "travelModifier": {
+      "difficultyClass": 11,
+      "attribute": "WIS"
+    }
+  },
+  "hexes": [
+    {
+      "id": "1211",
+      "terrain": "Lichtung mit großer Eiche",
+      "poi": {
+        "name": "Die Große Eiche",
+        "type": "Landmark",
+        "status": "undiscovered",
+        "shortDesc": "Ein uralter Eichenbaum von gewaltigen Ausmaßen. Seine Wurzeln bilden natürliche Kammern.",
+        "challengeRating": 2,
+        "linkToDetail": "locations/grosse_eiche.md"
+      },
+      "connections": [
+        {
+          "targetHex": "1312",
+          "type": "environmental",
+          "trigger": "Untersuche die Wurzelkammern der Eiche.",
+          "description": "Zwischen den Wurzeln findet ihr einen schmalen Pfad, der tiefer in den Wald führt. Seltsame blaue Flechten markieren den Weg.",
+          "revealed": false
+        }
+      ],
+      "resources": ["Eicheln (magisch verstärkt)", "Heilkräuter"],
+      "notes": "Die Eiche ist Heimat einer freundlichen Dryade namens Silberblatt.",
+      "isRevealed": false
+    },
+    {
+      "id": "1312",
+      "terrain": "Dornengestrüpp",
+      "poi": {
+        "name": "Feenkreis der Verwirrung",
+        "type": "Event",
+        "status": "undiscovered",
+        "shortDesc": "Ein perfekter Kreis aus Pilzen, umgeben von undurchdringlichen Dornenranken.",
+        "challengeRating": 3,
+        "linkToDetail": "locations/feenkreis_verwirrung.md"
+      },
+      "connections": [
+        {
+          "targetHex": "1412",
+          "type": "quest",
+          "trigger": "Bestehe die Prüfung des Feenkreises.",
+          "description": "Die Feen gewähren euch einen Hinweis: 'Wo die Nebel tanzen und die Zeit stillsteht, wartet ein Schatz aus vergangenen Tagen.'",
+          "revealed": false
+        }
+      ],
+      "notes": "Der Feenkreis teleportiert Eindringlinge an zufällige Orte, wenn sie die Rätsel nicht lösen.",
+      "isRevealed": false
+    },
+    {
+      "id": "1112",
+      "poi": null,
+      "notes": "Dichtes Unterholz mit vereinzelten Dornenranken. Schwer passierbar.",
+      "resources": ["Dornbeeren", "Heilkräuter"],
+      "isRevealed": false
+    },
+    {
+      "id": "1212",
+      "poi": null,
+      "notes": "Ein kleiner Waldbach plätschert zwischen moosbedeckten Steinen.",
+      "resources": ["Frischwasserquelle", "Moos (alchemistisch)"],
+      "isRevealed": false
+    },
+    {
+      "id": "1311",
+      "terrain": "Alter Druidenhain",
+      "poi": {
+        "name": "Steinkreis der Jahreszeiten",
+        "type": "Ruin",
+        "status": "undiscovered",
+        "shortDesc": "Ein alter Steinkreis, in dem die Druiden einst die Jahreszeiten begrüßten. Noch immer magisch aktiv.",
+        "challengeRating": 2,
+        "linkToDetail": "locations/steinkreis_jahreszeiten.md"
+      },
+      "resources": ["Magische Kräuter", "Mondsteine"],
+      "notes": "Bei Vollmond erwachen hier die Geister alter Druiden.",
+      "isRevealed": false
+    },
+    {
+      "id": "1412",
+      "terrain": "Verwunschener Hain",
+      "poi": null,
+      "resources": ["Feenstaub (magisch)", "Glühwürmchen", "Traumkräuter"],
+      "notes": "Die Bäume hier scheinen zu flüstern. Zeitweise sind Irrlichter zu sehen.",
+      "encounterTables": {
+        "day": "wald_tag_mystisch",
+        "night": "wald_nacht_mystisch"
+      },
+      "isRevealed": false
+    },
+    {
+      "id": "1111",
+      "poi": null,
+      "notes": "Normaler Waldbereich mit hohen Buchen und Eichen.",
+      "resources": ["Wildbret", "Bucheckern"],
+      "isRevealed": false
+    },
+    {
+      "id": "1313",
+      "poi": null,
+      "notes": "Ein sumpfiger Bereich des Waldes. Hier sammelt sich Regenwasser.",
+      "resources": ["Sumpfgas (brennbar)", "Sumpfkräuter"],
+      "isRevealed": false
+    }
+  ]
+}
+

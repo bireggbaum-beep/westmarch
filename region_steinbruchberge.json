@@ -1,0 +1,115 @@
+{
+  "regionName": "Steinbruchberge",
+  "regionData": {
+    "defaultTerrain": "Bergiges Gelände",
+    "encounterTables": {
+      "day": "berge_tag_mittel",
+      "night": "berge_nacht_mittel"
+    },
+    "travelModifier": {
+      "difficultyClass": 12,
+      "attribute": "STR"
+    }
+  },
+  "hexes": [
+    {
+      "id": "0810",
+      "terrain": "Bergpass",
+      "poi": {
+        "name": "Eisenklang-Mine",
+        "type": "Dungeon",
+        "status": "undiscovered",
+        "shortDesc": "Eine verlassene Eisenmine, aus der nachts seltsame Hammerschläge zu hören sind.",
+        "challengeRating": 3,
+        "linkToDetail": "locations/eisenklang_mine.md"
+      },
+      "connections": [
+        {
+          "targetHex": "0710",
+          "type": "environmental",
+          "trigger": "Folge den alten Schienen aus der Mine.",
+          "description": "Die rostigen Schienen führen zu einem höher gelegenen Eingang, der in den Berg hineinführt.",
+          "revealed": false
+        }
+      ],
+      "resources": ["Eisenerz (gering)", "Kohle"],
+      "notes": "Die Hammerschläge sind tatsächlich ein gefangener Erdgeist.",
+      "isRevealed": false
+    },
+    {
+      "id": "0710",
+      "terrain": "Hochgebirge",
+      "poi": {
+        "name": "Halle der Steinväter",
+        "type": "Ruin",
+        "status": "undiscovered",
+        "shortDesc": "Eine uralte Zwergenhalle, tief in den Berg gehauen. Die Eingänge sind teilweise verschüttet.",
+        "challengeRating": 4,
+        "linkToDetail": "locations/halle_der_steinvaeter.md"
+      },
+      "resources": ["Edelsteine (selten)", "Zwergische Artefakte"],
+      "notes": "Heimat eines alten Steinriesen, der friedlich ist, wenn man respektvoll auftritt.",
+      "isRevealed": false
+    },
+    {
+      "id": "0809",
+      "poi": null,
+      "resources": ["Steinpilze", "Bergkräuter", "Murmeltiere"],
+      "notes": "Steile Felswände und schmale Pfade. Schwieriges Gelände.",
+      "isRevealed": false
+    },
+    {
+      "id": "0811",
+      "poi": null,
+      "notes": "Ein kleiner Bergsee, gespeist von Schneeschmelze. Kristallklares Wasser.",
+      "resources": ["Frischwasserquelle", "Bergforellen"],
+      "isRevealed": false
+    },
+    {
+      "id": "0910",
+      "terrain": "Bergausläufer",
+      "poi": null,
+      "notes": "Sanftere Hänge mit vereinzelten Kiefern. Übergang zum Tal.",
+      "resources": ["Kiefernharz"],
+      "isRevealed": false
+    },
+    {
+      "id": "0711",
+      "terrain": "Gipfelregion",
+      "poi": {
+        "name": "Windpfeifer-Gipfel",
+        "type": "Landmark",
+        "status": "undiscovered",
+        "shortDesc": "Ein hoher Gipfel, durch dessen Felsspalten der Wind pfeift. Bietet weite Sicht über das Land.",
+        "challengeRating": 1,
+        "linkToDetail": "locations/windpfeifer_gipfel.md"
+      },
+      "connections": [
+        {
+          "targetHex": "1012",
+          "type": "environmental",
+          "trigger": "Klettere auf den Gipfel und betrachte das Land (Klettern ZW 14).",
+          "description": "Von hier oben seht ihr seltsame Nebelschwaden, die sich im Osten sammeln, und einen dunklen Fleck im südlichen Wald.",
+          "revealed": false
+        }
+      ],
+      "notes": "Bei klarem Wetter kann man alle vier Regionen überblicken.",
+      "isRevealed": false
+    },
+    {
+      "id": "0610",
+      "poi": null,
+      "resources": ["Adlereier (selten)", "Windkristalle"],
+      "notes": "Schroffe Felswände, unzugänglich für normale Reisende.",
+      "isRevealed": false
+    },
+    {
+      "id": "0712",
+      "poi": null,
+      "notes": "Steinige Hochebene mit spärlicher Vegetation.",
+      "resources": ["Bergkräuter (selten)"],
+      "isRevealed": false
+    }
+  ]
+}
+

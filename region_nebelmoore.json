@@ -1,0 +1,126 @@
+{
+  "regionName": "Nebelmoore",
+  "regionData": {
+    "defaultTerrain": "Sumpfland",
+    "encounterTables": {
+      "day": "sumpf_tag_mittel",
+      "night": "sumpf_nacht_schwer"
+    },
+    "travelModifier": {
+      "difficultyClass": 14,
+      "attribute": "WIS"
+    }
+  },
+  "hexes": [
+    {
+      "id": "1110",
+      "terrain": "Moorrand",
+      "poi": null,
+      "notes": "Der Übergang vom festen Boden zum Sumpf. Hier beginnt der ständige Nebel.",
+      "resources": ["Schilfrohr", "Moorbeeren"],
+      "isRevealed": false
+    },
+    {
+      "id": "1210",
+      "terrain": "Tiefes Moor",
+      "poi": {
+        "name": "Irrlicht-Insel",
+        "type": "Event",
+        "status": "undiscovered",
+        "shortDesc": "Eine kleine Insel im Moor, umgeben von tanzenden Irrlichtern. Zeitweise scheint hier die Zeit stillzustehen.",
+        "challengeRating": 4,
+        "linkToDetail": "locations/irrlicht_insel.md"
+      },
+      "connections": [
+        {
+          "targetHex": "1310",
+          "type": "environmental",
+          "trigger": "Folge den Irrlichtern, wenn sie nach Osten wandern.",
+          "description": "Die Lichter führen euch zu einer versunkenen Ruine, die nur bei Ebbe sichtbar wird.",
+          "revealed": false
+        }
+      ],
+      "notes": "Hier sind Zeitanomalien besonders stark. Uhren gehen falsch, Zauber wirken unvorhersagbar.",
+      "isRevealed": false
+    },
+    {
+      "id": "1310",
+      "terrain": "Versunkene Ruinen",
+      "poi": {
+        "name": "Turm der Echos",
+        "type": "Dungeon",
+        "status": "undiscovered",
+        "shortDesc": "Ein halb versunkener Turm aus einer vergangenen Ära. Stimmen vergangener Bewohner hallen noch immer wider.",
+        "challengeRating": 5,
+        "linkToDetail": "locations/turm_der_echos.md"
+      },
+      "resources": ["Antike Münzen", "Magische Komponenten"],
+      "notes": "Der Turm ist nur bei Ebbe vollständig zugänglich. Die Echos können Informationen über die Vergangenheit preisgeben.",
+      "isRevealed": false
+    },
+    {
+      "id": "1209",
+      "poi": null,
+      "resources": ["Nebelflechten", "Sumpfgas", "Blutegel (medizinisch)"],
+      "notes": "Dichter Nebel macht die Sicht auf wenige Meter. Orientierung sehr schwierig.",
+      "encounterTables": {
+        "day": "sumpf_nebel_tag",
+        "night": "sumpf_nebel_nacht"
+      },
+      "isRevealed": false
+    },
+    {
+      "id": "1309",
+      "terrain": "Moorauge",
+      "poi": {
+        "name": "Das Schwarze Auge",
+        "type": "Landmark",
+        "status": "undiscovered",
+        "shortDesc": "Ein perfekt runder, tiefschwarzer Teich. Das Wasser ist so still, dass es wie ein Spiegel wirkt.",
+        "challengeRating": 3,
+        "linkToDetail": "locations/schwarzes_auge.md"
+      },
+      "connections": [
+        {
+          "targetHex": "1409",
+          "type": "environmental",
+          "trigger": "Blicke bei Mondschein in das schwarze Wasser.",
+          "description": "Im Spiegelbild seht ihr nicht euch selbst, sondern eine Vision von Ruinen tief im östlichen Moor.",
+          "revealed": false
+        }
+      ],
+      "notes": "Das Wasser zeigt Visionen der Vergangenheit und Zukunft. Kann aber auch Wahnsinn verursachen.",
+      "isRevealed": false
+    },
+    {
+      "id": "1409",
+      "terrain": "Tiefmoor",
+      "poi": {
+        "name": "Versunkene Bibliothek",
+        "type": "Dungeon",
+        "status": "undiscovered",
+        "shortDesc": "Die Überreste einer großen Bibliothek, größtenteils unter Wasser. Magische Barrieren schützen einige Bereiche.",
+        "challengeRating": 6,
+        "linkToDetail": "locations/versunkene_bibliothek.md"
+      },
+      "resources": ["Zauberspruchrollen", "Antike Bücher", "Magische Tinten"],
+      "notes": "Hier lagern Geheimnisse einer untergegangenen Zivilisation. Wasserschaden macht viele Texte unleserlich.",
+      "isRevealed": false
+    },
+    {
+      "id": "1211",
+      "poi": null,
+      "notes": "Sumpfiges Gelände mit vereinzelten Bauminseln. Heimat von Sumpfgas-Blasen.",
+      "resources": ["Sumpfgas", "Moorholz"],
+      "isRevealed": false
+    },
+    {
+      "id": "1311",
+      "poi": null,
+      "resources": ["Sumpfrohr", "Wassernüsse", "Krebse"],
+      "notes": "Ein Netzwerk aus schmalen Wasserkanälen. Nur mit Boot oder zu Fuß durch seichtes Wasser passierbar.",
+      "isRevealed": false
+    }
+  ]
+}
+

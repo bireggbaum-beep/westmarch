@@ -1,0 +1,111 @@
+{
+  "regionName": "Zentrales Tal von Weisslauf",
+  "regionData": {
+    "defaultTerrain": "Hügelland",
+    "encounterTables": {
+      "day": "zentral_tag_leicht",
+      "night": "zentral_nacht_leicht"
+    },
+    "travelModifier": {
+      "difficultyClass": 8,
+      "attribute": "WIS"
+    }
+  },
+  "hexes": [
+    {
+      "id": "1010",
+      "terrain": "Stadt",
+      "poi": {
+        "name": "Weisslauf",
+        "type": "Settlement",
+        "status": "discovered",
+        "shortDesc": "Eine geschäftige Grenzstadt am Kreuzungspunkt alter Handelswege. Heimatbasis für Abenteurer.",
+        "challengeRating": 0,
+        "linkToDetail": "locations/weisslauf.md"
+      },
+      "resources": ["Handelsposten", "Gasthäuser", "Schmied", "Tempel"],
+      "notes": "Sicherer Hafen und Ausgangspunkt für alle Expeditionen.",
+      "isRevealed": true
+    },
+    {
+      "id": "1009",
+      "poi": null,
+      "notes": "Sanfte Hügel mit vereinzelten Bauernhöfen. Friedlich und sicher.",
+      "resources": ["Getreidefelder"],
+      "isRevealed": false
+    },
+    {
+      "id": "1011",
+      "poi": null,
+      "notes": "Ein kleiner Bach schlängelt sich durch das Tal. Beliebter Rastplatz für Reisende.",
+      "resources": ["Frischwasserquelle"],
+      "isRevealed": false
+    },
+    {
+      "id": "0910",
+      "poi": {
+        "name": "Alte Steinbrücke",
+        "type": "Landmark",
+        "status": "undiscovered",
+        "shortDesc": "Eine uralte Steinbrücke über einen reißenden Fluss. Erbaut von unbekannten Meistern.",
+        "challengeRating": 1,
+        "linkToDetail": "locations/alte_steinbruecke.md"
+      },
+      "connections": [
+        {
+          "targetHex": "0810",
+          "type": "environmental",
+          "trigger": "Untersuche die Inschriften auf der Brücke (Gelehrsamkeit ZW 12).",
+          "description": "Die Runen weisen nach Norden und erwähnen 'die Hallen unter dem Berg, wo das Eisen singt'.",
+          "revealed": false
+        }
+      ],
+      "notes": "Der Fluss ist hier besonders tief und reißend.",
+      "isRevealed": false
+    },
+    {
+      "id": "1110",
+      "poi": null,
+      "notes": "Dichtes Gebüsch und kleine Waldstücke. Gelegentlich Wildtiere.",
+      "resources": ["Heilkräuter", "Wildbret"],
+      "isRevealed": false
+    },
+    {
+      "id": "0909",
+      "poi": null,
+      "resources": ["Wildkräuter", "Beeren", "Kaninchen"],
+      "notes": "Offenes Grasland mit vereinzelten Felsformationen.",
+      "isRevealed": false
+    },
+    {
+      "id": "1111",
+      "poi": {
+        "name": "Verlassener Wachturm",
+        "type": "Ruin",
+        "status": "undiscovered",
+        "shortDesc": "Ein alter Wachturm aus der Zeit der ersten Siedler. Jetzt Heimat einer Familie Rieseneulen.",
+        "challengeRating": 2,
+        "linkToDetail": "locations/verlassener_wachturm.md"
+      },
+      "connections": [
+        {
+          "targetHex": "1211",
+          "type": "item",
+          "trigger": "Durchsuche das oberste Stockwerk des Turms.",
+          "description": "Ihr findet ein altes Logbuch mit Berichten über 'seltsame Lichter im Dornenwald südlich der großen Eiche'.",
+          "revealed": false
+        }
+      ],
+      "notes": "Der Turm ist noch strukturell solide, aber unbewohnt.",
+      "isRevealed": false
+    },
+    {
+      "id": "1012",
+      "poi": null,
+      "notes": "Sanfte Hügel mit wilden Blumenwiesen. Besonders schön im Frühling.",
+      "resources": ["Honig (Wildbienen)"],
+      "isRevealed": false
+    }
+  ]
+}
+
