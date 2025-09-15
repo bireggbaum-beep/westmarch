@@ -1,0 +1,88 @@
+[
+  {
+    "hexId": "-3,1",
+    "regionId": "reg_steinzahn_berge",
+    "tags": ["Berge", "Zwerge", "Ruine", "Schmiede"],
+    "terrain": "Hohe Bergpässe",
+    "difficulty": 4,
+    "pointsOfInterest": [
+      {
+        "name": "Die Himmels-Schmiede",
+        "type": "Find/Rätsel",
+        "description": "Auf einem unzugänglichen Berggipfel befindet sich eine einzelne, riesige Zwergen-Schmiede unter freiem Himmel, die von einem ewigen magischen Feuer betrieben wird.",
+        "explored": false,
+        "details": {
+          "objective": "Erreiche die Schmiede und nutze ihr Feuer, um eine magische Waffe zu erschaffen oder zu verbessern.",
+          "keyFeatures": ["Der Weg zur Schmiede ist eine Kletter-Herausforderung.", "Die Schmiede selbst ist verlassen, aber voll funktionsfähig.", "Das Feuer reagiert auf bestimmte Materialien und Runen."],
+          "encounters": {
+            "main": "Ein 'Wind-Elementar', der den Gipfel als sein Revier betrachtet und Eindringlinge angreift.",
+            "secondary": "Gefahr durch Lawinen und extreme Kälte."
+          },
+          "loot": {
+            "main": "Die Möglichkeit, eine Waffe mit dem Attribut 'Blitz' oder 'Wind' zu versehen.",
+            "minor": "Einige zurückgelassene, meisterhaft gefertigte Zwergen-Werkzeuge."
+          },
+          "secrets": [
+            {
+              "clue": "Die Runen am Amboss beschreiben ein Ritual.",
+              "revelation": "Wenn man während des Schmiedens einen seltenen Edelstein (z.B. Saphir) opfert, erhält die Waffe einen zusätzlichen Bonus."
+            }
+          ],
+          "layout": {
+            "area1": {"name": "Der Aufstieg", "description": "Eine gefährliche Kletterpartie entlang steiler Felswände."},
+            "area2": {"name": "Der Gipfel", "description": "Eine flache Gipfelplattform, auf der die Schmiede steht und der Elementar umherzieht."}
+          }
+        },
+        "rumors": ["Die Trolle der Steinzahn-Berge erzählen Legenden von den 'Schmieden ihrer Väter' hoch in den Wolken."]
+      }
+    ],
+    "uniqueTreasure": null,
+    "encounters": [],
+    "resources": ["Sternenmetall-Erz (sehr selten)"],
+    "connections": []
+  },
+  {
+    "hexId": "-3,0",
+    "regionId": "reg_steinzahn_berge",
+    "tags": ["Berge", "Zwerge", "Dungeon", "Mine", "Konstrukt"],
+    "terrain": "Hohe, schneebedeckte Gipfel",
+    "difficulty": 4,
+    "pointsOfInterest": [
+      {
+        "name": "Die verlorene Zwergenfestung 'Eisenherz'",
+        "type": "Großer Dungeon",
+        "description": "Der massive, mit Runen verzierte Eingang zu einer Zwergenfestung, der von einer Lawine halb verschüttet wurde. Eine unheimliche Stille liegt über dem Ort.",
+        "explored": false,
+        "details": {
+          "objective": "Finde den Weg in die versiegelte Thronhalle und entdecke das Schicksal der Eisenherz-Zwerge. Aktiviere den 'Herz-Ofen' der Festung neu.",
+          "keyFeatures": ["Die Festung ist ein riesiges Labyrinth aus Hallen, Minen und Wohnquartieren.", "Automatisierte Zwergen-Verteidigungen (Konstrukte, Fallen) sind noch aktiv.", "Ein unheimliches, metallisches Wesen hat die Kontrolle übernommen."],
+          "encounters": {
+            "main": "Der 'Rost-Fürst', ein riesiges Konstrukt aus Schrott und gestohlenen Zwergen-Maschinen, das im Herz-Ofen nistet.",
+            "secondary": "Mehrere 'Zwergen-Automaten' (mechanische Wächter); 'Rost-Monster' (kleinere Versionen des Fürsten); Geister der gefallenen Zwerge."
+          },
+          "loot": {
+            "main": "Der 'Schmiedehammer von Eisenherz' (ein legendärer Hammer, der magische Waffen verbessern kann) und die Schatzkammer der Zwerge.",
+            "minor": "Barren aus Mithril und Adamantium, ungeschliffene Diamanten, Baupläne für Zwergen-Konstrukte."
+          },
+          "secrets": [
+            {
+              "clue": "Einige Zwergengeister versuchen, den Spielern den Weg zu zeigen, anstatt sie anzugreifen.",
+              "revelation": "Sie führen zu einer geheimen Waffenkammer mit Runen-Äxten, die besonders effektiv gegen Konstrukte sind."
+            }
+          ],
+          "layout": {
+            "area1": {"name": "Die Große Halle", "description": "Eine riesige, stille Halle, übersät mit den metallenen Überresten von Zwergen und Maschinen."},
+            "area2": {"name": "Die Wohnquartiere", "description": "Staubbedeckte Räume, in denen die Geister der Zwerge umgehen."},
+            "area3": {"name": "Die Minenschächte", "description": "Ein Netzwerk aus Tunneln, in denen die Rost-Monster lauern."},
+            "area4": {"name": "Der Herz-Ofen", "description": "Die zentrale Schmiede der Festung, jetzt der Thronsaal des Rost-Fürsten."}
+          }
+        },
+        "rumors": ["Die Karte aus dem Goblin-Lager zeigt den Weg zu den 'Verlassenen Zwergenminen' weit im Westen."]
+      }
+    ],
+    "uniqueTreasure": null,
+    "encounters": [],
+    "resources": ["Mithril", "Adamantium", "Edelsteine"],
+    "connections": []
+  }
+]
