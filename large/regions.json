@@ -1,0 +1,147 @@
+[
+  {
+    "regionId": "reg_tal_von_weisslauf",
+    "name": "Tal von Weisslauf",
+    "description": "Das relativ zivilisierte und fruchtbare Tal, das die Stadt Weisslauf umgibt. Es dient als Pufferzone zwischen der Sicherheit der Stadt und der ungezähmten Wildnis dahinter. Es ist geprägt von Landwirtschaft, Handel und den ersten, greifbaren Gefahren.",
+    "regionalEncounters": [
+      {"roll": "1-4", "encounter": "Nichts Besonderes", "type": "Keine"},
+      {"roll": "5-6", "encounter": "Wildtiere", "type": "Harmlos", "details": "Eine Hirschherde grast friedlich oder eine Wildschweinrotte durchwühlt den Boden."},
+      {"roll": "7", "encounter": "Wetterereignis", "type": "Atmosphäre", "details": "Siehe Wettertabelle."},
+      {"roll": "8", "encounter": "Spuren", "type": "Hinweis", "details": "Frische Spuren einer Händlerkarawane oder die Fährte eines großen Bären."},
+      {"roll": "9", "encounter": "Reisende", "type": "Sozial", "details": "Eine Händlerkarawane auf dem Weg nach Weisslauf oder eine Gruppe von Bauern."},
+      {"roll": "10", "encounter": "Verirrter Wolf", "type": "Gefahr (leicht)", "details": "Ein einzelner, hungriger Wolf, der von seinem Rudel getrennt wurde."},
+      {"roll": "11", "encounter": "Verlassenes Lager", "type": "Entdeckung", "details": "Ein kürzlich verlassenes Lagerfeuer. Die Asche ist noch warm."},
+      {"roll": "12", "encounter": "Patrouille aus Weisslauf", "type": "Sozial", "details": "Eine kleine Gruppe von Wachen, die nach dem Rechten sehen."}
+    ],
+    "regionalResources": ["Nahrung (Wild, Feldfrüchte)", "Reines Wasser", "Holz", "Felle", "Kräuter"],
+    "climate": {
+      "baseTemperature": "gemässigt",
+      "typicalWeather": ["Meist mild", "gelegentlicher Regen", "Morgennebel am Fluss"],
+      "weatherTable": [
+        {"roll": 1, "event": "Anhaltender Regen", "effect": "Reisen ist mühsam, die Stimmung ist gedrückt."},
+        {"roll": 2, "event": "Leichter Regen", "effect": "Keine"},
+        {"roll": 3, "event": "Bewölkt und windig", "effect": "Nachteil auf Fernkampfangriffe."},
+        {"roll": 4, "event": "Bewölkt", "effect": "Keine"},
+        {"roll": 5, "event": "Teilweise sonnig", "effect": "Keine"},
+        {"roll": 6, "event": "Klar und sonnig", "effect": "Gute Sicht, hebt die Moral."}
+      ]
+    }
+  },
+  {
+    "regionId": "reg_heulende_huegel",
+    "name": "Die Heulenden Hügel",
+    "description": "Eine karge, windgepeitschte Hügellandschaft, die als Heimat für kriegerische Goblin- und Orkstämme dient. Die Luft ist erfüllt vom Heulen der Warge und dem Klang von Kriegstrommeln.",
+    "regionalEncounters": [
+      {"roll": "1-2", "encounter": "Nichts als der heulende Wind", "type": "Keine"},
+      {"roll": "3", "encounter": "Spuren", "type": "Hinweis", "details": "Spuren einer Ork-Patrouille oder die Hufabdrücke von Wargen."},
+      {"roll": "4", "encounter": "Wetterereignis", "type": "Atmosphäre", "details": "Siehe Wettertabelle."},
+      {"roll": "5-7", "encounter": "Goblin-Späher", "type": "Gefahr (leicht)", "details": "Eine kleine Gruppe von 2-4 Goblins auf der Lauer."},
+      {"roll": "8-9", "encounter": "Ork-Patrouille", "type": "Gefahr (mittel)", "details": "Eine disziplinierte Gruppe von 3-5 Orks."},
+      {"roll": "10", "encounter": "Warg-Rudel", "type": "Gefahr (mittel)", "details": "Ein Rudel hungriger Warge (2-3) auf der Jagd."},
+      {"roll": "11", "encounter": "Rivalisierende Stämme", "type": "Beobachtung", "details": "In der Ferne kämpfen Goblins und Orks gegeneinander."},
+      {"roll": "12", "encounter": "Ork-Kriegstrupp", "type": "Gefahr (schwer)", "details": "Ein großer Kriegstrupp, angeführt von einem Champion."}
+    ],
+    "regionalResources": ["Eisenader (selten, bewacht)", "Feuerstein", "Tierknochen", "Lederreste"],
+    "climate": {
+      "baseTemperature": "kühl und windig",
+      "typicalWeather": ["Starke Windböen", "grauer Himmel", "plötzliche Schauer"],
+      "weatherTable": [
+        {"roll": 1, "event": "Sturm", "effect": "Starker Regen und Wind. Nachteil auf alle Wahrnehmungsproben und Fernkampfangriffe."},
+        {"roll": 2, "event": "Starker Wind", "effect": "Nachteil auf Fernkampfangriffe."},
+        {"roll": 3, "event": "Nieselregen", "effect": "Keine"},
+        {"roll": 4, "event": "Dicht bewölkt", "effect": "Keine"},
+        {"roll": 5, "event": "Aufreißende Wolken", "effect": "Keine"},
+        {"roll": 6, "event": "Klar und windstill", "effect": "Selten und unheimlich ruhig."}
+      ]
+    }
+  },
+  {
+    "regionId": "reg_duesterwald",
+    "name": "Der Düsterwald",
+    "description": "Ein uralter, von einem Fluch befallener Wald. Das Sonnenlicht dringt kaum durch das Blätterdach, und die Luft ist schwer von unheiliger Energie. Hier wandeln die Toten und die Natur ist verdreht.",
+    "regionalEncounters": [
+      {"roll": "1-2", "encounter": "Unheimliche Stille", "type": "Keine"},
+      {"roll": "3", "encounter": "Spuren", "type": "Hinweis", "details": "Schleifspuren, als ob etwas Schweres gezerrt wurde. Keine Tierspuren."},
+      {"roll": "4", "encounter": "Wetterereignis", "type": "Atmosphäre", "details": "Siehe Wettertabelle."},
+      {"roll": "5-6", "encounter": "Riesenspinnen", "type": "Gefahr (leicht)", "details": "1-3 Jägerspinnen seilen sich von den Bäumen ab."},
+      {"roll": "7-8", "encounter": "Wandelnde Tote", "type": "Gefahr (mittel)", "details": "Eine Gruppe von 2-5 torkelnden Skeletten oder Zombies."},
+      {"roll": "9", "encounter": "Flüsternde Schatten", "type": "Gefahr (Atmosphäre)", "details": "Schatten huschen im Augenwinkel, Fackeln flackern und erlöschen."},
+      {"roll": "10", "encounter": "Irrlichter", "type": "Gefahr (Täuschung)", "details": "Ein Licht lockt die Gruppe von ihrem Pfad tiefer in den Wald."},
+      {"roll": "11", "encounter": "Geisterhafte Erscheinung", "type": "Sozial/Horror", "details": "Ein durchscheinender Geist erscheint und wiederholt seine letzten, tragischen Momente."},
+      {"roll": "12", "encounter": "Ghul-Hinterhalt", "type": "Gefahr (schwer)", "details": "2-4 Ghule brechen aus dem Unterholz hervor."}
+    ],
+    "regionalResources": ["Seltene Pilze", "Spinnenseide", "Gift", "Herzholz-Zweig (sehr selten)", "Verdorbenes Weihwasser"],
+    "climate": {
+      "baseTemperature": "kalt und feucht",
+      "typicalWeather": ["Ständiger Nebel", "kein Wind", "kalter Nieselregen"],
+      "weatherTable": [
+        {"roll": 1, "event": "Unnatürliche Kälte", "effect": "Die Temperatur fällt schlagartig. Gefahr von Erschöpfung."},
+        {"roll": 2, "event": "Dichter, undurchdringlicher Nebel", "effect": "Sichtweite auf wenige Meter reduziert."},
+        {"roll": 3, "event": "Schwarzer Regen", "effect": "Ein öliger, schwarzer Regen fällt. Unheilvolle Atmosphäre."},
+        {"roll": 4, "event": "Totale Stille", "effect": "Alle Geräusche werden gedämpft. Eigene Schritte sind ohrenbetäubend."},
+        {"roll": 5, "event": "Bewölkt und dämmrig", "effect": "Keine"},
+        {"roll": 6, "event": "Fahles Licht", "effect": "Ein seltsames, fahles Licht dringt durch die Wolken, ohne zu wärmen."}
+      ]
+    }
+  },
+  {
+    "regionId": "reg_nebelsuempfe",
+    "name": "Die Nebelsümpfe",
+    "description": "Ein weitläufiges und tückisches Sumpfgebiet, durchzogen von einem Labyrinth aus Wasserwegen. Ein gesetzloser Ort, Heimat von Schmugglern, Kulten und monströsen Sumpfkreaturen.",
+    "regionalEncounters": [
+      {"roll": "1-2", "encounter": "Nur das Summen der Insekten", "type": "Keine"},
+      {"roll": "3", "encounter": "Spuren", "type": "Hinweis", "details": "Amphibische Spuren am Ufer oder die Überreste eines geplünderten Bootes."},
+      {"roll": "4", "encounter": "Wetterereignis", "type": "Atmosphäre", "details": "Siehe Wettertabelle."},
+      {"roll": "5-6", "encounter": "Sumpf-Raubtiere", "type": "Gefahr (mittel)", "details": "Ein Riesenalligator oder 2-3 Würgeschlangen."},
+      {"roll": "7", "encounter": "Schwarm Blutsauger", "type": "Gefahr (leicht)", "details": "Ein Schwarm aggressiver Insekten greift an."},
+      {"roll": "8", "encounter": "Schmugglerboot", "type": "Sozial/Gefahr", "details": "Ein leises Boot gleitet durch den Nebel. Die Insassen sind misstrauisch."},
+      {"roll": "9", "encounter": "Kultisten-Patrouille", "type": "Gefahr (mittel)", "details": "Eine Gruppe von 3-4 Kultisten in dunklen Roben durchquert den Sumpf."},
+      {"roll": "10", "encounter": "Sumpfgas", "type": "Umweltgefahr", "details": "Eine große Gasblase steigt auf und kann sich bei offenem Feuer entzünden."},
+      {"roll": "11", "encounter": "Versunkene Ruine", "type": "Entdeckung", "details": "Die Spitze eines alten Gebäudes ragt aus dem trüben Wasser."},
+      {"roll": "12", "encounter": "Modderschlinger", "type": "Gefahr (schwer)", "details": "Ein großer Haufen Pflanzen und Schlamm erhebt sich und greift an."}
+    ],
+    "regionalResources": ["Sumpfgas", "Seltene Fische", "Magische Kräuter", "Pilze", "Obsidian"],
+    "climate": {
+      "baseTemperature": "schwül und feucht",
+      "typicalWeather": ["Dichter Nebel", "hohe Luftfeuchtigkeit", "plötzliche Gewitter"],
+      "weatherTable": [
+        {"roll": 1, "event": "Heftiges Gewitter", "effect": "Starker Regen, Blitze. Reisen ist gefährlich."},
+        {"roll": 2, "event": "Dichter, übelriechender Nebel", "effect": "Sichtweite stark eingeschränkt, kann Übelkeit verursachen."},
+        {"roll": 3, "event": "Dauerregen", "effect": "Der Sumpf wird noch unwegsamer."},
+        {"roll": 4, "event": "Drückende Schwüle", "effect": "Erschöpfung tritt schneller ein."},
+        {"roll": 5, "event": "Leichter Nebel", "effect": "Keine"},
+        {"roll": 6, "event": "Sonnendurchbruch", "effect": "Der Nebel lichtet sich kurzzeitig, was seltsam und unpassend wirkt."}
+      ]
+    }
+  },
+  {
+    "regionId": "reg_steinzahn_berge",
+    "name": "Die Steinzahn-Berge",
+    "description": "Eine gewaltige und schroffe Gebirgskette, deren schneebedeckte Gipfel in den Wolken verschwinden. Heimat von Riesen und Elementaren, birgt sie die Ruinen vergessener Zwergenfestungen.",
+    "regionalEncounters": [
+      {"roll": "1-3", "encounter": "Heulender Wind in den Pässen", "type": "Keine"},
+      {"roll": "4", "encounter": "Spuren", "type": "Hinweis", "details": "Riesige Fußspuren im Schnee oder die Überreste eines von einem großen Tier gerissenen Bergziege."},
+      {"roll": "5", "encounter": "Wetterereignis", "type": "Umweltgefahr", "details": "Siehe Wettertabelle."},
+      {"roll": "6", "encounter": "Steinschlag", "type": "Umweltgefahr", "details": "Steine lösen sich von einem Hang. Geschicklichkeits-Rettungswurf erforderlich."},
+      {"roll": "7", "encounter": "Riesenadler", "type": "Beobachtung", "details": "Ein riesiger Adler kreist hoch am Himmel und beobachtet die Gruppe."},
+      {"roll": "8", "encounter": "Steintroll", "type": "Gefahr (mittel)", "details": "Ein einzelner Troll, der sich als Fels tarnt, blockiert den Weg."},
+      {"roll": "9", "encounter": "Eis-Mephiten", "type": "Gefahr (leicht)", "details": "Eine Gruppe von 2-4 boshaften kleinen Elementaren."},
+      {"roll": "10", "encounter": "Verirrter Zwergen-Automat", "type": "Beobachtung/Gefahr", "details": "Ein rostiger, aber noch funktionierender Wächter wandert ziellos umher."},
+      {"roll": "11", "encounter": "Frost-Salamander", "type": "Gefahr (schwer)", "details": "Eine große, reptilienartige Kreatur, die Kälte ausstrahlt."},
+      {"roll": "12", "encounter": "Frostriese", "type": "Beobachtung/Gefahr (extrem)", "details": "In der Ferne ist die gewaltige Silhouette eines Frostriesen zu sehen, der über einen Grat schreitet."}
+    ],
+    "regionalResources": ["Sternenmetall-Erz (sehr selten)", "Mithril (in Ruinen)", "Adamantium (in Ruinen)", "Edelsteine", "Obsidian"],
+    "climate": {
+      "baseTemperature": "eiskalt",
+      "typicalWeather": ["Scharfer Wind", "Schneefall", "blendende Sonne auf Schneefeldern"],
+      "weatherTable": [
+        {"roll": 1, "event": "Schneesturm (Blizzard)", "effect": "Keine Sicht, Reisen unmöglich, extremer Kälteschaden."},
+        {"roll": 2, "event": "Lawine", "effect": "In der Ferne oder in der Nähe. Kann den Weg blockieren oder die Gruppe gefährden."},
+        {"roll": 3, "event": "Starker Schneefall", "effect": "Sicht eingeschränkt, hinterlässt tiefe Spuren."},
+        {"roll": 4, "event": "Eisiger Wind", "effect": "Nachteil auf Konstitutions-Rettungswürfe gegen Kälte."},
+        {"roll": 5, "event": "Bewölkt und kalt", "effect": "Keine"},
+        {"roll": 6, "event": "Klar und sonnig", "effect": "Gute Sicht, aber Gefahr von Schneeblindheit."}
+      ]
+    }
+  }
+]
