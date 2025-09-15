@@ -1,0 +1,750 @@
+[
+  {
+    "poiId": {
+      "numeric": 1,
+      "code": "TW-SI-001"
+    },
+    "regionId": "reg_tal_von_weisslauf",
+    "name": "Weisslauf",
+    "type": "Siedlung",
+    "status": "undiscovered",
+    "description": "Die letzte Bastion der Zivilisation am Rande der Wildnis. Ein Ort für Handel, Erholung und vor allem Gerüchte, die zu Abenteuern führen.",
+    "details": {
+      "objective": "Ausrüstung beschaffen, Beute verkaufen, heilen und neue Abenteuer-Hooks (Gerüchte/Aufträge) finden.",
+      "keyFeatures": ["Die Palisaden aus grobem Holz bieten ein Gefühl trügerischer Sicherheit.", "Der zentrale Marktplatz ist belebt und laut.", "Die Gassen abseits des Marktes sind schlammig und schlecht beleuchtet."],
+      "services": {
+        "Taverne 'Zum durstigen Wanderer'": "Ein Ort, um Gerüchte zu hören. Wirtin Helga sammelt Geschichten von zurückkehrenden Abenteurern.",
+        "Schmiede 'Grom's Eisenfaust'": "Der Zwerg Grom repariert Ausrüstung und verkauft einfache Waffen. Er ist mürrisch, aber ehrlich.",
+        "Handelsposten 'Weges Ende'": "Geleitet von Faren, einem nervösen Händler. Kauft und verkauft alles, von Rationen bis zu erbeuteten Schätzen.",
+        "Tempel der Klerikerin Elara": "Ein kleiner Schrein, wo Elara Heilung gegen eine Spende anbietet und altes Wissen über die Ruinen und Flüche der Region teilt."
+      },
+      "layout": {}
+    },
+    "connections": [
+      {"linkedHexId": "-3,0", "type": "discovered", "trigger": "Sprecht mit Faren, dem Händler, und nehmt seinen Auftrag an.", "description": "Faren, der Händler, bietet eine Belohnung für die Rückholung seiner gestohlenen Warenkiste aus der 'Goblin-Höhle' im Westen.", "isRevealed": false},
+      {"linkedHexId": "0,-3", "type": "discovered", "trigger": "Sprecht mit Klerikerin Elara und nehmt ihre Bitte an.", "description": "Klerikerin Elara ist besorgt über den wachsenden Fluch im 'Düsterwald' und bittet Abenteurer, die Quelle beim 'Gehängtenbaum' im Süden zu untersuchen.", "isRevealed": false},
+      {"linkedHexId": "3,0", "type": "discovered", "trigger": "Hört den Gerüchten eines Jägers in der Taverne 'Zum durstigen Wanderer' zu.", "description": "Ein Jäger erzählt von seltsamen Vorkommnissen bei der Taverne 'Zum Wilden Eber' im Osten.", "isRevealed": false}
+    ]
+  },
+  {
+    "poiId": {
+      "numeric": 2,
+      "code": "TW-SI-002"
+    },
+    "regionId": "reg_tal_von_weisslauf",
+    "name": "Taverne 'Zum Wilden Eber'",
+    "type": "Siedlung",
+    "status": "undiscovered",
+    "description": "Eine rustikale, aber beliebte Taverne, die außerhalb der Stadtmauern an der Oststraße liegt. Ein Treffpunkt für Jäger, Bauern und Reisende.",
+    "details": {
+      "objective": "Sammle Gerüchte, die nicht bis in die Stadt vordringen, oder heuere einen lokalen Führer an.",
+      "keyFeatures": ["Die Wände sind mit Jagdtrophäen geschmückt.", "Der Wirt, ein ehemaliger Jäger namens Bero, ist eine gute Informationsquelle.", "Es gibt eine Zielscheibe für Axtwerfen im Hinterhof."],
+      "encounters": {"main": "Bero, der Wirt. Kann misstrauisch sein, wenn man Ärger macht.", "secondary": "Lokale Bauern, ein reisender Händler, ein prahlerischer Jäger."},
+      "loot": {"main": "Bero kann eine handgezeichnete Karte zu einem 'besonders guten Jagdgebiet' verkaufen.", "minor": "Gutes Essen und starkes Bier."},
+      "secrets": [{"clue": "Der prahlerische Jäger verliert im Axtwerfen und wird wütend.", "revelation": "Im Streit verrät er, dass er sich nicht mehr zur 'Alten Jägerhütte' (alter POI) traut, seit 'der Boden lebendig wurde'."}],
+      "layout": {}
+    },
+    "connections": [
+      {"linkedHexId": "3,3", "type": "discovered", "trigger": "Fragt den Wirt Bero nach guten Jagdgründen oder vergessenen Orten.", "description": "Der Wirt Bero erzählt, dass der alte Einsiedler Silas im Nordosten die besten Jagdgründe kennt und Karten zu vergessenen Pfaden besitzt.", "isRevealed": false}
+    ]
+  },
+  {
+    "poiId": {
+      "numeric": 3,
+      "code": "TW-SI-003"
+    },
+    "regionId": "reg_tal_von_weisslauf",
+    "name": "Die Grumel-Höfe",
+    "type": "Siedlung",
+    "status": "undiscovered",
+    "description": "Eine Ansammlung von drei kleinen, aber gepflegten Bauernhöfen, die Weisslauf mit Getreide und Gemüse versorgen.",
+    "details": {
+      "objective": "Kaufe frische Vorräte oder frage nach lokalen Problemen.",
+      "keyFeatures": ["Die Bauern sind fleißig, aber wortkarg gegenüber Fremden.", "Wachhunde bellen bei jeder Annäherung."],
+      "encounters": {"main": "Bauer Grumel, der mürrische Sprecher der Höfe."},
+      "loot": {"main": "Bauer Grumel bietet eine kleine Belohnung, wenn man die Wölfe vertreibt, die nachts sein Vieh reißen.", "minor": "Möglichkeit, Rationen zu einem guten Preis zu kaufen."},
+      "secrets": [],
+      "layout": {}
+    },
+    "connections": []
+  },
+  {
+    "poiId": {
+      "numeric": 4,
+      "code": "TW-DU-004"
+    },
+    "regionId": "reg_tal_von_weisslauf",
+    "name": "Lager der 'Flusspiraten'",
+    "type": "Dungeon",
+    "status": "undiscovered",
+    "description": "Ein verstecktes, durch Palisaden geschütztes Lager am Flussufer, von dem aus eine Bande von Deserteuren Handelsschiffe überfällt.",
+    "details": {
+      "objective": "Besiege die Piratenanführerin 'Einäugige-Janna' und befreie ihre Gefangenen.",
+      "keyFeatures": ["Das Lager liegt strategisch günstig in einer Flussbiegung.", "Ein Glockenturm dient als Alarmsystem.", "Die Piraten nutzen den Fluss für schnelle Fluchtversuche."],
+      "encounters": {"main": "'Einäugige-Janna' (eine erfahrene Kämpferin) und ihre zwei loyalen Maate.", "secondary": "6-8 Banditen, die im Lager verteilt sind."},
+      "loot": {"main": "Eine Seekiste mit 300 GM und einer Schatzkarte.", "minor": "Diverse gestohlene Waren (Alkohol, Stoffe), ein Fernrohr."},
+      "secrets": [{"clue": "Ein unter Wasser liegender Tunnel führt unter der Palisade hindurch (Wahrnehmung ZW 15 am Ufer).", "revelation": "Ermöglicht das unbemerkte Eindringen in die Mitte des Lagers."}],
+      "layout": {}
+    },
+    "connections": [
+      {"linkedHexId": "9,0", "type": "discovered", "trigger": "Findet und entziffert die Schatzkarte aus der Seekiste von 'Einäugige-Janna'.", "description": "Die Schatzkarte ist in einer seltsamen Chiffre geschrieben und erwähnt einen Kontaktmann namens 'Schlick-Finger' auf dem Schwarzmarkt 'Treibgut' in den Nebelsümpfen, der bei der Entschlüsselung helfen kann.", "isRevealed": false}
+    ]
+  },
+  {
+    "poiId": {
+      "numeric": 5,
+      "code": "TW-RU-005"
+    },
+    "regionId": "reg_tal_von_weisslauf",
+    "name": "Versunkener Wachturm",
+    "type": "Ruine",
+    "status": "undiscovered",
+    "description": "Die Spitze eines alten Steinturms ragt aus einem flachen, von Algen bedeckten See. Vögel kreisen über der Ruine.",
+    "details": {
+      "objective": "Finde einen Weg in den Turm und berge das Logbuch der alten Garnison.",
+      "keyFeatures": ["Das Wasser ist trüb und die Sicht ist schlecht.", "Der Turm ist baufällig und Klettern ist gefährlich.", "Unter der Wasseroberfläche lauern Gefahren."],
+      "encounters": {"main": "Ein 'Kelpie' (ein bösartiger Wassergeist in Pferdegestalt).", "secondary": "Mehrere aggressive 'Riesen-Hechte'."},
+      "loot": {"main": "Eine wasserdichte Truhe mit dem Logbuch der Garnison.", "minor": "Ein rostiges, aber noch brauchbares Langschwert, 50 Silbermünzen."},
+      "secrets": [{"clue": "Bei niedrigem Wasserstand oder durch Abtasten der Mauern unter Wasser findet man eine verborgene Tür (Entdecken (INT) ZW 13).", "revelation": "Die Tür führt direkt in den relativ trockenen oberen Raum."}],
+      "layout": {}
+    },
+    "connections": [
+      {"linkedHexId": "0,6", "type": "discovered", "trigger": "Bergt das Logbuch der Garnison aus der wasserdichten Truhe im Turm.", "description": "Das Logbuch der alten Garnison enthält eine verblichene Karte, die den Standort der ursprünglichen Siedlung 'Alt-Weisslauf' im Norden zeigt.", "isRevealed": false}
+    ]
+  },
+  {
+    "poiId": {
+      "numeric": 6,
+      "code": "TW-LM-006"
+    },
+    "regionId": "reg_tal_von_weisslauf",
+    "name": "Versteckte Angelstelle",
+    "type": "Landmark",
+    "status": "undiscovered",
+    "description": "Ein kleiner, von Schilf verdeckter Holzsteg führt zu einer ruhigen Stelle am See.",
+    "details": {
+      "objective": "Finde einen friedlichen Ort zum Angeln.",
+      "keyFeatures": ["Das Wasser ist hier ungewöhnlich klar.", "Man ist vor dem Wind geschützt."],
+      "encounters": {},
+      "loot": {"main": "Hier ist die Chance, besonders große und wertvolle Fische zu fangen (Vorteil auf Proben zum Angeln).", "minor": "Ein alter, vergessener Köder in einer Kiste."},
+      "secrets": [],
+      "layout": {}
+    },
+    "connections": []
+  },
+  {
+    "poiId": {
+      "numeric": 7,
+      "code": "TW-SI-007"
+    },
+    "regionId": "reg_tal_von_weisslauf",
+    "name": "Der Hof des alten Einsiedlers",
+    "type": "Siedlung",
+    "status": "undiscovered",
+    "description": "Ein kleiner, verbarrikadierter Hof, bewohnt von einem misstrauischen, aber wissenden Einsiedler namens Silas.",
+    "details": {
+      "objective": "Gewinne das Vertrauen von Silas, um an sein Wissen über die Wildnis oder eine spezielle Belohnung zu gelangen.",
+      "keyFeatures": ["Der Hof ist von einem hohen Zaun umgeben.", "Silas beobachtet Besucher lange, bevor er sich zeigt.", "Er züchtet ungewöhnlich große und aggressive Ziegen."],
+      "encounters": {"main": "Silas (ein pensionierter Abenteurer), der die Spieler zunächst mit seiner Armbrust bedroht.", "secondary": "Seine 'Wachziegen', die jeden angreifen, der über den Zaun klettert."},
+      "loot": {"main": "Wenn die Spieler ihm helfen, gibt er ihnen eine 'Karte der vergessenen Pfade'.", "minor": "Er kann seltene Kräuter oder selbstgemachte Tränke verkaufen."},
+      "secrets": [{"clue": "Eine verschlossene Truhe unter seinem Bett (Schlösserknacken ZW 15).", "revelation": "Die Truhe enthält seine alte Abenteurerausrüstung, darunter ein magisches Kurzschwert."}],
+      "layout": {}
+    },
+    "connections": [
+      {"linkedHexId": "0,6", "type": "discovered", "trigger": "Gewinnt das Vertrauen von Silas und erhaltet seine 'Karte der vergessenen Pfade'.", "description": "Die Karte von Silas enthüllt einen alten, zugewachsenen Pfad, der eine direkte und sichere Reise zu den Ruinen von Alt-Weisslauf ermöglicht.", "isRevealed": false}
+    ]
+  },
+  {
+    "poiId": {
+      "numeric": 8,
+      "code": "TW-SI-008"
+    },
+    "regionId": "reg_tal_von_weisslauf",
+    "name": "Grummels Ost-Hof",
+    "type": "Siedlung",
+    "status": "undiscovered",
+    "description": "Der östlichste und isolierteste Bauernhof, bewirtschaftet von der starrköpfigen Grummel-Familie.",
+    "details": {
+      "objective": "Überzeuge Bauer Grummel, dir Informationen über die Flusspiraten zu geben oder einen Handel einzugehen.",
+      "keyFeatures": ["Der Hof ist von einer niedrigen Steinmauer umgeben.", "Bauer Grummel ist extrem misstrauisch gegenüber Fremden.", "Die Familie besitzt einen großen, furchteinflößenden Hund namens 'Beißer'."],
+      "encounters": {"main": "Bauer Grummel und seine drei Söhne, die Fremden mit Mistgabeln und Argwohn begegnen.", "secondary": "Der Wachhund 'Beißer'."},
+      "loot": {"main": "Wenn die Spieler das Piratenproblem lösen, erhalten sie von Grummel eine Belohnung von 50 GM und kostenlose Verpflegung.", "minor": "Man kann frische Nahrung und Wasser kaufen."},
+      "secrets": [{"clue": "Die Scheune ist fest verschlossen.", "revelation": "Die Grummels verstecken dort einen verletzten Piraten, den sie gefangen genommen haben und der wertvolle Informationen hat."}],
+      "layout": {}
+    },
+    "connections": [
+      {"linkedHexId": "6,0", "type": "discovered", "trigger": "Sprecht mit Bauer Grummel über seine Probleme.", "description": "Bauer Grummel bietet eine Belohnung für die Beseitigung des Piratenproblems flussabwärts im Süden.", "isRevealed": false}
+    ]
+  },
+  {
+    "poiId": {
+      "numeric": 9,
+      "code": "TW-RU-009"
+    },
+    "regionId": "reg_tal_von_weisslauf",
+    "name": "Ruinen von Alt-Weisslauf",
+    "type": "Ruine",
+    "status": "undiscovered",
+    "description": "Die kaum sichtbaren Grundmauern der ursprünglichen Siedlung versinken im Sumpf. Irrlichter tanzen über dem Wasser.",
+    "details": {
+      "objective": "Finde die alte, überflutete Krypta unter dem Marktplatz und berge das 'Siegel des ersten Bürgermeisters'.",
+      "keyFeatures": ["Bewegung ist durch knietiefes Wasser und Schlamm erschwert.", "Dichter Nebel hängt ständig über den Ruinen.", "Irrlichter versuchen, die Spieler in tiefere, gefährlichere Teile des Sumpfes zu locken."],
+      "encounters": {"main": "Ein 'Sumpf-Scheusal' (ein großer Untoter aus Schlamm und Knochen), das die Krypta bewacht.", "secondary": "Mehrere Irrlichter; ein Schwarm 'Sumpf-Piranhas' in der Krypta."},
+      "loot": {"main": "Das 'Siegel des ersten Bürgermeisters', ein wertvolles historisches Artefakt.", "minor": "Einige verwitterte Münzen, ein wasserdichter Beutel mit Edelsteinen."},
+      "secrets": [{"clue": "Ein bestimmter Ziegelstein in einer Mauer ist lose (Wahrnehmung ZW 14).", "revelation": "Dahinter befindet sich eine Nische mit einem Tagebuch, das die letzten Tage von Alt-Weisslauf beschreibt."}],
+      "layout": {}
+    },
+    "connections": []
+  },
+  {
+    "poiId": {
+      "numeric": 10,
+      "code": "NS-RU-010"
+    },
+    "regionId": "reg_nebelsuempfe",
+    "name": "Leuchtturm der Ahnen",
+    "type": "Ruine",
+    "status": "undiscovered",
+    "description": "Ein riesiger, zerfallender Leuchtturm auf einer Klippe über dem Meer. Sein Licht ist seit Jahrhunderten erloschen, doch manchmal pulsiert ein unheimliches Leuchten von seiner Spitze.",
+    "details": {
+      "objective": "Erklimme den Leuchtturm, löse das Rätsel der alten Wächter und entzünde das 'Seelenfeuer' neu, um die Küste vor einem nahenden Übel zu warnen.",
+      "keyFeatures": ["Der Turm ist ein vertikaler Dungeon mit vielen Stockwerken.", "Geister der ehemaligen Leuchtturmwärter prüfen die Würdigkeit der Eindringlinge mit Rätseln.", "Der Wind heult durch die zerbrochenen Fenster und macht das Klettern gefährlich."],
+      "encounters": {"main": "Der 'Geist des Ersten Wächters', der den Zugang zur Spitze blockiert, bis seine drei Rätsel gelöst sind.", "secondary": "Skelett-Seevögel, die in den oberen Stockwerken nisten; ein 'Klippen-Scheusal' (ein aus Treibgut und Ertrunkenen geformter Golem) am Fuß des Turms."},
+      "loot": {"main": "Die 'Linse der Weitsicht' (ein magisches Fernrohr, das Illusionen durchschauen kann) an der Spitze des Turms.", "minor": "Logbücher der Wächter, eine Seekarte mit unbekannten Inseln, ein Vorrat an alchemistischem Öl."},
+      "secrets": [{"clue": "Die Antworten auf die Rätsel des Geistes sind in den Wandmalereien auf den verschiedenen Stockwerken versteckt.", "revelation": "Nur wer den Turm aufmerksam studiert, kann die Prüfungen bestehen."}],
+      "layout": {}
+    },
+    "connections": []
+  },
+  {
+    "poiId": {
+      "numeric": 11,
+      "code": "HH-HO-011"
+    },
+    "regionId": "reg_heulende_huegel",
+    "name": "Goblin-Höhle: Knochenbrecher-Versteck",
+    "type": "Höhle",
+    "status": "undiscovered",
+    "description": "Ein grob in den Fels gehauener Höhleneingang, flankiert von primitiven Totems. Der Gestank ist schon von weitem wahrnehmbar.",
+    "details": {
+      "objective": "Besiege den Goblin-Anführer Knorpelbeißer und finde die gestohlene Fracht des Händlers Faren.",
+      "keyFeatures": ["Boden voller Abfall und Fallen.", "Ständiges Gekicher und Streiten der Goblins.", "Alles ist notdürftig zusammengeflickt."],
+      "encounters": {"main": "Häuptling Knorpelbeißer (ein übergroßer Goblin) und 2 Leibwächter.", "secondary": "3-4 Goblin-Wachen; 2 Goblin-Fallensteller; ein Käfig mit einem Riesen-Dachs."},
+      "loot": {"main": "Farens Warenkiste (150 GM) und eine grobe Karte.", "minor": "Rostige Waffen, kleiner Heiltrank, 2W20 Kupfermünzen."},
+      "secrets": [{"clue": "Wackelige Wand hinter Abfallhaufen (Entdecken (INT) ZW 12).", "revelation": "Geheimer Gang umgeht den Fallenraum."}, {"clue": "Käfig des Riesen-Dachses ist einfach verriegelt.", "revelation": "Befreiter Dachs wütet unkontrolliert durch die Höhle."}],
+      "layout": {}
+    },
+    "connections": [
+      {"linkedHexId": "-6,0", "type": "discovered", "trigger": "Findet die grobe Karte beim Leichnam des Häuptlings.", "description": "Die Karte des Goblin-Anführers zeigt den Weg zum 'Hauptlager' der Knochenbrecher weiter im Westen.", "isRevealed": false},
+      {"linkedHexId": "-3,3", "type": "discovered", "trigger": "Verhört einen gefangenen Goblin.", "description": "Ein gefangener Goblin verrät unter Druck, dass sie Befehle vom 'Blutauge'-Wachturm der Orks im Nordwesten erhalten.", "isRevealed": false}
+    ]
+  },
+  {
+    "poiId": {
+      "numeric": 12,
+      "code": "HH-HO-012"
+    },
+    "regionId": "reg_heulende_huegel",
+    "name": "Verlassener Unterschlupf",
+    "type": "Höhle",
+    "status": "undiscovered",
+    "description": "Eine kleine, natürliche Höhle, die durch einen Felssturz fast verschlossen wurde. Sie ist trocken und windgeschützt.",
+    "details": {
+      "objective": "Finde einen sicheren Ort zum Rasten in den gefährlichen Hügeln.",
+      "keyFeatures": ["Die Höhle ist klein, aber bietet Schutz für eine Gruppe.", "Es gibt eine alte, kalte Feuerstelle."],
+      "encounters": {},
+      "loot": {"main": "Unter einem losen Stein ist eine kleine Ledertasche mit einem Heiltrank (klein) versteckt.", "minor": "Einige trockene Holzscheite."},
+      "secrets": [],
+      "layout": {}
+    },
+    "connections": []
+  },
+  {
+    "poiId": {
+      "numeric": 13,
+      "code": "HH-DU-013"
+    },
+    "regionId": "reg_heulende_huegel",
+    "name": "Orkischer Wachturm 'Blutauge'",
+    "type": "Dungeon",
+    "status": "undiscovered",
+    "description": "Auf dem höchsten Hügelkamm steht ein grober Wachturm aus Holz und Stein, von dem eine blutrote Standarte weht.",
+    "details": {
+      "objective": "Eliminiere den Ork-Anführer Grolnok, um die Koordination der Goblins zu schwächen.",
+      "keyFeatures": ["Exzellente Fernkampfposition.", "Lager mit Warg-Käfigen am Fuß des Turms.", "Laute, brutale und überhebliche Orks."],
+      "encounters": {"main": "Ork-Champion 'Grolnok' und sein persönlicher Warg.", "secondary": "4-5 Ork-Krieger."},
+      "loot": {"main": "Grolnoks 'Ork-Spaltaxt' und ein Befehlsschreiben.", "minor": "Grober Alkohol, 3W20 Silbermünzen, schwere Armbrust."},
+      "secrets": [{"clue": "Morsche Palisade auf der Rückseite (Stärke ZW 13).", "revelation": "Ermöglicht einen Überraschungsangriff."}],
+      "layout": {}
+    },
+    "connections": [
+      {"linkedHexId": "-3,6", "type": "discovered", "trigger": "Hört die Gespräche der Orks ab oder findet das Befehlsschreiben.", "description": "Die Orks sprechen von den 'Welpen-Gruben' im Norden, wo die Warge gezüchtet werden.", "isRevealed": false},
+      {"linkedHexId": "-6,3", "type": "discovered", "trigger": "Findet eine Ritualkarte bei einem Ork-Schamanen im Lager.", "description": "Ein Schamane trägt eine Ritualkarte bei sich, die den Weg zum 'Feld der Ahnensteine' im Westen zeigt.", "isRevealed": false}
+    ]
+  },
+  {
+    "poiId": {
+      "numeric": 14,
+      "code": "HH-LM-014"
+    },
+    "regionId": "reg_heulende_huegel",
+    "name": "Jagdrevier der Bergziegen",
+    "type": "Landmark",
+    "status": "undiscovered",
+    "description": "Ein abgeschlossenes kleines Tal, in dem eine Herde besonders großer und widerstandsfähiger Bergziegen lebt.",
+    "details": {
+      "objective": "Jage die Ziegen für Nahrung und wertvolle Hörner.",
+      "keyFeatures": ["Die Ziegen sind territorial und ihre Böcke greifen Eindringlinge an.", "Das Gelände ist steil und steinig."],
+      "encounters": {"main": "Ein großer Ziegenbock mit massiven Hörnern."},
+      "loot": {"main": "Die Hörner des Bocks können zu einem Helm oder als Handelsware verarbeitet werden.", "minor": "Ausreichend Fleisch für mehrere Tage."},
+      "secrets": [],
+      "layout": {}
+    },
+    "connections": []
+  },
+  {
+    "poiId": {
+      "numeric": 15,
+      "code": "DW-LM-015"
+    },
+    "regionId": "reg_duesterwald",
+    "name": "Der Gehängtenbaum",
+    "type": "Landmark",
+    "status": "undiscovered",
+    "description": "Eine riesige, tote Eiche, an deren Ästen Dutzende alter Stricke hängen. Eine unheilige Aura geht von diesem Ort aus.",
+    "details": {
+      "objective": "Überlebe eine Nacht und entziffere das Geheimnis der Geister, um den Hinweis auf die Quelle des Fluchs zu erhalten.",
+      "keyFeatures": ["Rapider Temperaturabfall.", "Nächtliche geisterhafte Erscheinungen.", "Nonverbale Geister wiederholen ihre letzten Momente."],
+      "encounters": {"main": "Der 'Henker-Geist', ein zorniger Geist.", "secondary": "3-5 'Flüsternde Schatten', die Fackeln löschen."},
+      "loot": {"main": "Eine Vision von der 'versunkenen Kapelle'.", "minor": "Ein alter Silberring."},
+      "secrets": [{"clue": "Die Geister greifen kein unschuldig vergossenes Blut an.", "revelation": "Ein Blutopfer auf den Baum lässt schwächere Geister zurückweichen."}, {"clue": "Einer der Gehenkten trägt eine Ritteruniform.", "revelation": "Sein Geist ist der Schlüssel zur Lösung."}],
+      "layout": {}
+    },
+    "connections": [
+      {"linkedHexId": "3,-3", "type": "discovered", "trigger": "Untersucht das Symbol, das unter den Wurzeln des Baumes eingeritzt ist.", "description": "Das seltsame Symbol am Gehängtenbaum ist identisch mit dem Wappen, das über dem Eingang einer alten Gruft im Südosten prangt.", "isRevealed": false},
+      {"linkedHexId": "-3,-3", "type": "discovered", "trigger": "Überlebt die Nacht und besänftigt die Geister.", "description": "Nachdem der Henker-Geist zur Ruhe gebettet wurde, erhaltet ihr eine klare Vision: Eine kleine Kapelle, die im Sumpf im Südwesten versinkt, scheint die wahre Quelle des Fluchs zu sein.", "isRevealed": false}
+    ]
+  },
+  {
+    "poiId": {
+      "numeric": 16,
+      "code": "DW-LM-016"
+    },
+    "regionId": "reg_duesterwald",
+    "name": "Alter Friedhof",
+    "type": "Landmark",
+    "status": "undiscovered",
+    "description": "Ein kleiner, vergessener Friedhof mit verwitterten Grabsteinen, die tief im Wald verborgen sind.",
+    "details": {
+      "objective": "Untersuche den Friedhof nach Hinweisen oder Wertgegenständen.",
+      "keyFeatures": ["Die meisten Gräber sind eingesunken und von Moos bedeckt.", "Einige Grabsteine tragen noch lesbare Namen.", "Eine einzelne Krypta ist mit einer schweren Steinplatte versiegelt."],
+      "encounters": {"main": "Wenn die Krypta geöffnet wird, entsteigt ihr ein 'Grabwächter' (ein mächtiges Skelett)."},
+      "loot": {"main": "In der Krypta befindet sich eine verrostete, aber magische Axt (+1).", "minor": "Einige Grabbeigaben von geringem Wert."},
+      "secrets": [],
+      "layout": {}
+    },
+    "connections": []
+  },
+  {
+    "poiId": {
+      "numeric": 17,
+      "code": "DW-DU-017"
+    },
+    "regionId": "reg_duesterwald",
+    "name": "Eingang zur vergessenen Gruft",
+    "type": "Dungeon",
+    "status": "undiscovered",
+    "description": "Ein alter, mit Moos und Spinnweben überwachsener Steineingang in einem Hügel. Die Steintür ist zerbrochen.",
+    "details": {
+      "objective": "Durchquere die von Spinnen verseuchte Eingangshalle und finde das Hauptgrab des Ritters.",
+      "keyFeatures": ["Dicke, klebrige Spinnweben bedecken alles und gelten als Schwieriges Gelände.", "Ständiges Klicken von Chitin-Beinen.", "Alte, menschliche Architektur."],
+      "encounters": {"main": "Die 'Brutmutter' (Riesenspinne), die den Durchgang blockiert.", "secondary": "'Jägerspinnen'; Schwärme von Jungspinnen."},
+      "loot": {"main": "Das 'Amulett des stillen Wächters' am Sarkophag.", "minor": "Edelsteine, Rolle mit Schutzzauber gegen Gift."},
+      "secrets": [{"clue": "Brüchige Wand hinter einem Wandteppich (Entdecken (INT) ZW 14).", "revelation": "Führt in eine übersehene Schatzkammer."}],
+      "layout": {}
+    },
+    "connections": [
+      {"linkedHexId": "-3,-3", "type": "discovered", "trigger": "Findet und lest das Tagebuch in der geheimen Schatzkammer.", "description": "Ein Tagebuch in der Gruft erwähnt, dass der Ritter nur ein Wächter war und der wahre Fluch von einer 'versunkenen Kapelle' im Westen ausgeht.", "isRevealed": false}
+    ]
+  },
+  {
+    "poiId": {
+      "numeric": 18,
+      "code": "DW-LM-018"
+    },
+    "regionId": "reg_duesterwald",
+    "name": "Mysteriöse Steinstatuen",
+    "type": "Landmark",
+    "status": "undiscovered",
+    "description": "Eine Gruppe von drei Steinstatuen, die drei Krieger in trauernder Pose darstellen. Sie scheinen einen unsichtbaren Punkt in der Mitte anzustarren.",
+    "details": {
+      "objective": "Finde das Geheimnis der Statuen heraus.",
+      "keyFeatures": ["Die Statuen sind von außergewöhnlicher Handwerkskunst.", "Sie sind seltsam unberührt von Moos oder Verwitterung."],
+      "encounters": {},
+      "loot": {"main": "Wenn man einen wertvollen Gegenstand (z.B. Edelstein) in die Mitte legt, gewähren die Geister der Krieger einen Segen (einmalig Vorteil auf den nächsten Angriffswurf).", "minor": null},
+      "secrets": [],
+      "layout": {}
+    },
+    "connections": []
+  },
+  {
+    "poiId": {
+      "numeric": 19,
+      "code": "HH-DU-019"
+    },
+    "regionId": "reg_heulende_huegel",
+    "name": "Hauptlager der Knochenbrecher-Goblins",
+    "type": "Dungeon",
+    "status": "undiscovered",
+    "description": "Eine große, befestigte Höhlenfestung, Sitz des Goblin-Häuptlings 'König Grollzahn'.",
+    "details": {
+      "objective": "Besiege König Grollzahn und zerschlage die Führung der Goblins in der Region.",
+      "keyFeatures": ["Die Höhle ist ein Labyrinth aus Gängen und Kammern.", "Es gibt mehrere bewachte Eingänge.", "Die Goblins haben primitive, aber effektive Alarmsysteme (Trommeln und Hörner)."],
+      "encounters": {"main": "'König Grollzahn' (ein fetter, gerissener Goblin auf einem 'Thron' aus Schrott, der von zwei Höhlentrollen getragen wird).", "secondary": "Dutzende von Goblins; Goblin-Schamanen; Patrouillen mit Wölfen."},
+      "loot": {"main": "Die 'Kriegsstandarte der Knochenbrecher' und die Schatzkammer des Königs mit 500 GM und diversen Edelsteinen.", "minor": "Zahlreiche Waffen und Schilde von geringer Qualität."},
+      "secrets": [{"clue": "Ein schlecht bewachter Abwasserausgang auf der Rückseite des Hügels.", "revelation": "Ermöglicht den Zugang zu den unteren Ebenen der Höhle und umgeht die Haupteingänge."}],
+      "layout": {}
+    },
+    "connections": []
+  },
+  {
+    "poiId": {
+      "numeric": 20,
+      "code": "HH-EV-020"
+    },
+    "regionId": "reg_heulende_huegel",
+    "name": "Feld der Ahnensteine",
+    "type": "Event",
+    "status": "undiscovered",
+    "description": "Eine Ebene, übersät mit Dutzenden von grob behauenen Steinkreisen, die in der Dämmerung leise summen.",
+    "details": {
+      "objective": "Unterbrich das Ritual des Ork-Schamanen, der versucht, einen mächtigen Ahnengeist zu beschwören.",
+      "keyFeatures": ["Die Luft knistert vor Energie.", "Die Steine sind mit leuchtenden Runen bedeckt.", "Geisterhafte Ork-Ahnen manifestieren sich und beobachten die Szene."],
+      "encounters": {"main": "Ork-Schamane 'Murgoth' und der halb beschworene 'Geist des Ur-Häuptlings'.", "secondary": "2-3 Ork-Wachen, die den Schamanen schützen."},
+      "loot": {"main": "Murgoths 'Stab der Ahnenrufung', ein magischer Fokus.", "minor": "Ritualdolch mit Gravuren, Beutel mit seltenen Kräutern."},
+      "secrets": [{"clue": "Die Runen auf den Steinen können in einer bestimmten Reihenfolge deaktiviert werden (Intelligenzprobe ZW 14).", "revelation": "Das Deaktivieren der Runen schwächt den Ahnengeist erheblich und macht den Kampf einfacher."}],
+      "layout": {}
+    },
+    "connections": []
+  },
+  {
+    "poiId": {
+      "numeric": 21,
+      "code": "HH-DU-021"
+    },
+    "regionId": "reg_heulende_huegel",
+    "name": "Die Warg-Zuchtgruben",
+    "type": "Dungeon",
+    "status": "undiscovered",
+    "description": "Eine Reihe von natürlichen Gruben, in denen Orks ihre monströsen Kampfwölfe züchten. Das Heulen ist weithin zu hören.",
+    "details": {
+      "objective": "Sabotiere die Warg-Zucht, indem du den Alpha-Warg tötest oder befreist.",
+      "keyFeatures": ["Der Gestank von rohem Fleisch und Exkrementen ist überwältigend.", "Die Gruben sind durch schmale Felsbrücken verbunden.", "Die Orks behandeln die Warge mit extremer Brutalität."],
+      "encounters": {"main": "Der 'Alpha-Warg', ein riesiger, narbenbedeckter Wolf von unnatürlicher Größe.", "secondary": "Ein 'Warg-Meister' (Ork) und mehrere junge, aber aggressive Warge."},
+      "loot": {"main": "Der Pelz des Alpha-Wargs ist extrem wertvoll (200 GM).", "minor": "Eine schwere Eisenkette, die als improvisierte Waffe dienen kann."},
+      "secrets": [{"clue": "Der Mechanismus, der das Haupttor der größten Grube verschließt, ist rostig und kann sabotiert werden.", "revelation": "Wenn der Alpha-Warg befreit wird, greift er aus Wut zuerst seine Ork-Peiniger an."}],
+      "layout": {}
+    },
+    "connections": []
+  },
+  {
+    "poiId": {
+      "numeric": 22,
+      "code": "DW-DU-022"
+    },
+    "regionId": "reg_duesterwald",
+    "name": "Die Kapelle der ewigen Ruhe",
+    "type": "Dungeon",
+    "status": "undiscovered",
+    "description": "Eine kleine, zerfallene Kapelle, die im Sumpf versinkt. Das Zentrum des untoten Fluchs.",
+    "details": {
+      "objective": "Dringe in die Kapelle ein, besiege den 'Verfluchten Ritter' und zerstöre das 'Herz des Fluchs'.",
+      "keyFeatures": ["Die Kapelle versinkt langsam im Sumpf; der Boden ist instabil.", "Ein fahles, unheiliges Licht scheint aus den zerbrochenen Fenstern.", "Die Stille ist absolut und wird nur durch das Plätschern des Sumpfwassers gebrochen."],
+      "encounters": {"main": "Der 'Verfluchte Ritter', der untote Wächter der Kapelle.", "secondary": "Mehrere Ghule, die aus dem Sumpf aufsteigen; Gespenster in der Krypta."},
+      "loot": {"main": "Das 'Herz des Fluchs' (ein geschändetes Relikt) und das Schwert des Ritters, 'Eidbrecher'.", "minor": "Goldene Altar-Gegenstände (Kelch, Kerzenständer)."},
+      "secrets": [{"clue": "Hinter dem Altar befindet sich eine lose Steinplatte.", "revelation": "Sie verbirgt eine kleine Nische mit dem Tagebuch des Priesters, das die Geschichte des Fluchs erzählt."}],
+      "layout": {}
+    },
+    "connections": []
+  },
+  {
+    "poiId": {
+      "numeric": 23,
+      "code": "DW-LM-023"
+    },
+    "regionId": "reg_duesterwald",
+    "name": "Das Dickicht der flüsternden Dornen",
+    "type": "Landmark",
+    "status": "undiscovered",
+    "description": "Ein undurchdringliches Dickicht aus lebenden, scharfen Dornenranken, das etwas in seiner Mitte zu schützen scheint.",
+    "details": {
+      "objective": "Finde einen Weg ins Zentrum des Dickichts und entdecke, was es schützt.",
+      "keyFeatures": ["Gefährliches Gelände: Schaden durch Dornen.", "Leises, unverständliches Flüstern geht von den Ranken aus.", "Der Boden ist mit den rostigen Rüstungen und Waffen früherer Opfer übersät."],
+      "encounters": {"main": "Der 'Dornen-Wächter', ein riesiges, humanoides Pflanzenmonster im Zentrum.", "secondary": "Mehrere 'Blutranken', die Charaktere festsetzen können."},
+      "loot": {"main": "Ein 'Herzholz-Zweig', eine mächtige alchemistische Zutat, wächst im Zentrum.", "minor": "Die Ausrüstung der früheren Opfer (eine magische Rüstung, diverse Waffen)."},
+      "secrets": [{"clue": "Die Dornen ziehen sich vor Feuer zurück.", "revelation": "Der Einsatz von Feuer kann einen temporären Pfad durch das Dickicht schaffen."}],
+      "layout": {}
+    },
+    "connections": []
+  },
+  {
+    "poiId": {
+      "numeric": 24,
+      "code": "DW-EV-024"
+    },
+    "regionId": "reg_duesterwald",
+    "name": "Nest des Schreckensvogels",
+    "type": "Event",
+    "status": "undiscovered",
+    "description": "Ein riesiges Nest aus Knochen, Ästen und den Überresten von Karren in den Wipfeln der höchsten Bäume.",
+    "details": {
+      "objective": "Besiege den Schreckensvogel (Roc) und plündere sein Nest.",
+      "keyFeatures": ["Das Nest ist nur durch Klettern auf die riesigen Bäume erreichbar.", "Der Vogel ist meist auf der Jagd und kehrt nur zur Fütterung seiner Jungen zurück.", "Der Boden unter dem Nest ist mit den Knochen seiner Opfer übersät."],
+      "encounters": {"main": "Ein 'Schreckensvogel' (Roc), ein gigantischer Raubvogel.", "secondary": "Zwei Jungvögel im Nest, die zwar nicht fliegen können, aber aggressiv sind."},
+      "loot": {"main": "Die 'Schreckensklaue', die zu einer mächtigen Waffe verarbeitet werden kann, und ein unbeschädigtes, riesiges Ei (sehr wertvoll).", "minor": "Die Überreste einer Karawane, darunter eine verschlossene Geldkassette (250 GM)."},
+      "secrets": [{"clue": "Der Vogel reagiert extrem aggressiv auf das Geräusch von Glocken.", "revelation": "Das Läuten einer Glocke kann den Vogel anlocken, aber auch in einen unkontrollierbaren Zorn versetzen."}],
+      "layout": {}
+    },
+    "connections": []
+  },
+  {
+    "poiId": {
+      "numeric": 25,
+      "code": "DW-LM-025"
+    },
+    "regionId": "reg_duesterwald",
+    "name": "Die verlassene Holzfällerbrücke",
+    "type": "Landmark",
+    "status": "undiscovered",
+    "description": "Eine morsche, halb eingestürzte Holzbrücke über eine tiefe Schlucht. Der Wind pfeift durch die fehlenden Planken.",
+    "details": {
+      "objective": "Überquere die Schlucht sicher, ohne den Zorn der Harpyien auf dich zu ziehen oder in die Tiefe zu stürzen.",
+      "keyFeatures": ["Die Brücke ist extrem instabil.", "Die Schlucht ist über 50 Meter tief.", "Die Harpyien nisten in den Klippen unter der Brücke."],
+      "encounters": {"main": "Ein Schwarm von 3-5 Harpyien, deren Gesang Charaktere in den Tod locken kann.", "secondary": "Keine."},
+      "loot": {"main": "Im Nest der Harpyien findet sich ein 'Talisman des freien Falls', der einmal pro Tag den Zauber 'Federfall' auslöst.", "minor": "Glänzende Gegenstände, die die Harpyien gestohlen haben (Schmuck, polierte Steine)."},
+      "secrets": [{"clue": "Der Gesang der Harpyien kann durch laute Geräusche oder das Zustopfen der Ohren neutralisiert werden.", "revelation": "Charaktere, die sich die Ohren verstopfen, sind immun gegen den betörenden Gesang."}],
+      "layout": {}
+    },
+    "connections": []
+  },
+  {
+    "poiId": {
+      "numeric": 26,
+      "code": "NS-SI-026"
+    },
+    "regionId": "reg_nebelsuempfe",
+    "name": "Schwarzmarkt-Außenposten 'Treibgut'",
+    "type": "Siedlung",
+    "status": "undiscovered",
+    "description": "Ein auf Stelzen gebauter Handelsposten am Rande der Nebelsümpfe. Hier werden Waren umgeschlagen, bevor sie zum Haupt-Schwarzmarkt gelangen.",
+    "details": {
+      "objective": "Finde den Kontaktmann der Flusspiraten, 'Schlick-Finger', um die Schatzkarte von Kapitänin Janna zu entschlüsseln oder zu verkaufen.",
+      "keyFeatures": ["Der Posten ist ein Labyrinth aus wackeligen Stegen.", "Jeder hier ist bewaffnet und misstrauisch.", "Ein korrupter Wächter aus Weisslauf kontrolliert den Zugang."],
+      "encounters": {"main": "'Schlick-Finger' (ein aalglatter Halbling-Informationshändler) und seine zwei Oger-Leibwächter.", "secondary": "Diverse Schmuggler, Banditen und eine rivalisierende Diebesgilde."},
+      "loot": {"main": "Die entschlüsselte Information, wo der 'versunkene Schmugglerschatz' liegt.", "minor": "Möglichkeit, seltene Gifte und illegale Alchemie-Zutaten zu kaufen."},
+      "secrets": [{"clue": "Ein Gesprächsfetzen verrät, dass 'Schlick-Finger' panische Angst vor Geistern hat (Lauschen ZW 13).", "revelation": "Die Androhung, die Klerikerin Elara oder einen Geist auf ihn zu hetzen, kann ihn zu einem besseren Deal zwingen."}],
+      "layout": {}
+    },
+    "connections": [
+      {"linkedHexId": "12,0", "type": "discovered", "trigger": "Bringt 'Schlick-Finger' dazu, die Schatzkarte zu entschlüsseln.", "description": "Schlick-Finger verrät (freiwillig oder gezwungen) die Position des 'versunkenen Schmugglerschatzes' weiter östlich im tiefsten Sumpf.", "isRevealed": false}
+    ]
+  },
+  {
+    "poiId": {
+      "numeric": 27,
+      "code": "SB-DU-027"
+    },
+    "regionId": "reg_steinzahn_berge",
+    "name": "Die verlorene Zwergenfestung 'Eisenherz'",
+    "type": "Dungeon",
+    "status": "undiscovered",
+    "description": "Der massive, mit Runen verzierte Eingang zu einer Zwergenfestung, der von einer Lawine halb verschüttet wurde. Eine unheimliche Stille liegt über dem Ort.",
+    "details": {
+      "objective": "Finde den Weg in die versiegelte Thronhalle und entdecke das Schicksal der Eisenherz-Zwerge. Aktiviere den 'Herz-Ofen' der Festung neu.",
+      "keyFeatures": ["Die Festung ist ein riesiges Labyrinth aus Hallen, Minen und Wohnquartieren.", "Automatisierte Zwergen-Verteidigungen (Konstrukte, Fallen) sind noch aktiv.", "Ein unheimliches, metallisches Wesen hat die Kontrolle übernommen."],
+      "encounters": {"main": "Der 'Rost-Fürst', ein riesiges Konstrukt aus Schrott und gestohlenen Zwergen-Maschinen.", "secondary": "Mehrere 'Zwergen-Automaten'; 'Rost-Monster'; Geister der gefallenen Zwerge."},
+      "loot": {"main": "Der 'Schmiedehammer von Eisenherz' (ein legendärer Hammer) und die Schatzkammer der Zwerge.", "minor": "Barren aus Mithril und Adamantium, ungeschliffene Diamanten, Baupläne für Zwergen-Konstrukte."},
+      "secrets": [{"clue": "Einige Zwergengeister versuchen, den Spielern den Weg zu zeigen.", "revelation": "Sie führen zu einer geheimen Waffenkammer mit Runen-Äxten, die besonders effektiv gegen Konstrukte sind."}],
+      "layout": {}
+    },
+    "connections": []
+  },
+  {
+    "poiId": {
+      "numeric": 28,
+      "code": "HH-LM-028"
+    },
+    "regionId": "reg_heulende_huegel",
+    "name": "Die Knochengrube",
+    "type": "Landmark",
+    "status": "undiscovered",
+    "description": "Ein ausgetrocknetes, felsiges Flussbett, das von den Goblins als Müll- und Leichengrube missbraucht wird. Der Gestank ist unerträglich.",
+    "details": {
+      "objective": "Durchsuche die Grube nach etwas Wertvollem, das die Goblins weggeworfen haben könnten, und überlebe die Aasfresser.",
+      "keyFeatures": ["Der Boden ist eine rutschige Mischung aus Schlamm, Müll und Knochen.", "Wolken von Aasfliegen schwirren durch die Luft.", "Die Grube ist ein Labyrinth aus Felsbrocken und Müllhaufen."],
+      "encounters": {"main": "Ein 'Aas-Golem', ein riesiges Konstrukt aus Knochen, Müll und Leichen.", "secondary": "Mehrere 'Aas-Ghoule'; Schwärme von 'Knochensplittern'."},
+      "loot": {"main": "Ein 'unverdaulicher Ring' (+1 auf Zähigkeits-Rettungswürfe), der im Inneren des Golems gefunden wird.", "minor": "Die halb verrottete Ausrüstung früherer Opfer, einige wenige Münzen und Edelsteine."},
+      "secrets": [{"clue": "Ein Teil der Grube wird von einem unterirdischen Bach durchflossen.", "revelation": "Das fließende Wasser hält die Untoten fern und bietet einen relativ sicheren Rastplatz."}],
+      "layout": {}
+    },
+    "connections": []
+  },
+  {
+    "poiId": {
+      "numeric": 29,
+      "code": "DW-EV-029"
+    },
+    "regionId": "reg_duesterwald",
+    "name": "Das Revier der Hydra",
+    "type": "Event",
+    "status": "undiscovered",
+    "description": "Ein riesiger, nebliger See im Herzen des tiefsten Sumpfes. Die Bäume am Ufer sind zerbrochen und tragen Bissspuren von einem gewaltigen Tier.",
+    "details": {
+      "objective": "Jage und besiege die legendäre Sumpf-Hydra, um an ihre wertvollen alchemistischen Komponenten zu gelangen.",
+      "keyFeatures": ["Die Hydra hat mehrere Köpfe, die nachwachsen, wenn sie nicht mit Feuer kauterisiert werden.", "Das Gelände ist tückisch und besteht aus tiefem Wasser, kleinen Inseln und versunkenen Baumstämmen.", "Die Hydra ist extrem territorial und greift alles an, was sich ihrem See nähert."],
+      "encounters": {"main": "Die Sumpf-Hydra, ein riesiges, mehrköpfiges Reptil.", "secondary": "Mehrere 'Hydra-Brutlinge' (kleinere, einköpfige Versionen), die im See lauern."},
+      "loot": {"main": "Das 'Herz der Hydra' (eine extrem potente Zutat für Regenerationstränke) und 'Hydra-Blut' (ein starkes Gift).", "minor": "Die Schätze von früheren Abenteurern, die von der Hydra verschlungen wurden, am Grund des Sees."},
+      "secrets": [{"clue": "Die Hydra meidet eine bestimmte Art von leuchtendem Sumpfmoos.", "revelation": "Das Moos ist giftig für sie und kann als Waffe oder zur Schaffung sicherer Zonen verwendet werden."}],
+      "layout": {}
+    },
+    "connections": []
+  },
+  {
+    "poiId": {
+      "numeric": 30,
+      "code": "NS-EV-030"
+    },
+    "regionId": "reg_nebelsuempfe",
+    "name": "Der Altar des gurgelnden Gottes",
+    "type": "Event",
+    "status": "undiscovered",
+    "description": "Inmitten einer versunkenen Tempelruine steht ein Obsidian-Altar, von dem ein unaufhörliches, gurgelndes Geräusch ausgeht. Kultisten in dunklen Roben führen hier ihre Riten durch.",
+    "details": {
+      "objective": "Unterbrich das Ritual der Kultisten, die versuchen, eine Entität aus dem Wasser zu beschwören.",
+      "keyFeatures": ["Das Wasser um den Altar blubbert und ist unnatürlich warm.", "Die Kultisten sind in ihre Gesänge vertieft und anfangs unaufmerksam.", "Symbole auf dem Altar korrespondieren mit Sternenkonstellationen."],
+      "encounters": {"main": "Ein 'Kult-Anführer' (Magier) und der teilweise beschworene 'Schlick-Schrecken' (ein amorphes Wasserwesen).", "secondary": "4-6 Kultisten-Akolythen."},
+      "loot": {"main": "Ein 'Ritualdolch des tiefen Wassers', der unter Wasser atmen lässt.", "minor": "Verbotene Texte über ozeanische Gottheiten."},
+      "secrets": [{"clue": "Die Kultisten reagieren panisch auf das Symbol der Klerikerin Elara.", "revelation": "Das Zeigen des heiligen Symbols unterbricht ihre Konzentration und schwächt die Beschwörung."}],
+      "layout": {}
+    },
+    "connections": []
+  },
+  {
+  "poiId": {
+    "numeric": 31,
+    "code": "NS-SI-031"
+  },
+  "regionId": "reg_nebelsuempfe",
+  "name": "Isaras Hütte",
+  "type": "Siedlung",
+  "status": "undiscovered",
+  "description": "Die Hütte von Isara, einer als 'verderbte Sumpfmutter' gefürchteten Hexe. Sie ist auf riesigen, verfaulten Wurzeln gebaut und von giftig leuchtenden Pilzen umgeben. Ein Steg aus Knochen und modrigem Holz führt durch das schwarze Wasser zu ihrer Tür.",
+  "details": {
+    "objective": "Handle mit Isara, um mächtige Gifte, Flüche oder verbotenes Wissen zu erhalten.",
+    "keyFeatures": [
+      "Isara ist weder gut noch böse, sondern eine unberechenbare, uralte Macht.",
+      "Sie verlangt seltsame, oft grausame Dinge als Bezahlung (ein Fingerglied, eine schmerzhafte Erinnerung, das Auge eines Feindes).",
+      "Ihre Hütte ist größer als sie von außen scheint."
+    ],
+    "encounters": {
+      "main": "Isara, die verdorbene Sumpfmutter. Eine uralte und mächtige Hexe.",
+      "secondary": "Ihr 'Hauswächter', ein aus Leichenteilen und Schlamm geformter Golem."
+    },
+    "loot": {
+      "main": "Die Möglichkeit, einzigartige Gifte zu kaufen oder einen schrecklichen Fluch auf einen Feind legen zu lassen.",
+      "minor": "Verkauf seltener, giftiger Kräuter und alchemistischer Zutaten."
+    },
+    "secrets": [
+      {
+        "clue": "Isara sammelt Geheimnisse. Ein besonders dunkles oder schändliches Geheimnis beeindruckt sie.",
+        "revelation": "Für ein solches Geheimnis gewährt sie einen Rabatt oder eine vage, beunruhigende Weissagung."
+      }
+    ],
+    "layout": {}
+  },
+  "connections": []
+},
+  {
+    "poiId": {
+      "numeric": 32,
+      "code": "SB-LM-032"
+    },
+    "regionId": "reg_steinzahn_berge",
+    "name": "Die Himmels-Schmiede",
+    "type": "Landmark",
+    "status": "undiscovered",
+    "description": "Auf einem unzugänglichen Berggipfel befindet sich eine einzelne, riesige Zwergen-Schmiede unter freiem Himmel, die von einem ewigen magischen Feuer betrieben wird.",
+    "details": {
+      "objective": "Erreiche die Schmiede und nutze ihr Feuer, um eine magische Waffe zu erschaffen oder zu verbessern.",
+      "keyFeatures": ["Der Weg zur Schmiede ist eine Kletter-Herausforderung.", "Die Schmiede selbst ist verlassen, aber voll funktionsfähig.", "Das Feuer reagiert auf bestimmte Materialien und Runen."],
+      "encounters": {"main": "Ein 'Wind-Elementar', der den Gipfel als sein Revier betrachtet.", "secondary": "Gefahr durch Lawinen und extreme Kälte."},
+      "loot": {"main": "Die Möglichkeit, eine Waffe mit dem Attribut 'Blitz' oder 'Wind' zu versehen.", "minor": "Einige zurückgelassene, meisterhaft gefertigte Zwergen-Werkzeuge."},
+      "secrets": [{"clue": "Die Runen am Amboss beschreiben ein Ritual.", "revelation": "Wenn man während des Schmiedens einen seltenen Edelstein (z.B. Saphir) opfert, erhält die Waffe einen zusätzlichen Bonus."}],
+      "layout": {}
+    },
+    "connections": []
+  },
+  {
+    "poiId": {
+      "numeric": 33,
+      "code": "SB-HO-033"
+    },
+    "regionId": "reg_steinzahn_berge",
+    "name": "Höhle des Zyklopen-Schmieds",
+    "type": "Höhle",
+    "status": "undiscovered",
+    "description": "Eine gewaltige Höhle am Fuße eines Berges, aus der das rhythmische Schlagen eines riesigen Hammers zu hören ist. Die Hitze einer gewaltigen Esse strömt aus dem Eingang.",
+    "details": {
+      "objective": "Überzeuge den mürrischen Zyklopen-Schmied Arges, eine Waffe oder Rüstung von legendärer Qualität zu schmieden.",
+      "keyFeatures": ["Arges ist ein Meister seines Fachs, aber verachtet 'kleine Leute'.", "Seine Schmiede wird von einem gebundenen Feuerelementar betrieben.", "Er verlangt seltene Materialien oder die Erfüllung einer gefährlichen Aufgabe als Bezahlung."],
+      "encounters": {"main": "Arges, der Zyklop-Schmied. Er ist nicht von Natur aus feindselig, aber extrem reizbar.", "secondary": "Der gebundene Feuerelementar, der ausbricht, wenn seine Fesseln gelöst werden."},
+      "loot": {"main": "Die Möglichkeit, eine maßgeschneiderte magische Waffe oder Rüstung zu erhalten.", "minor": "Überschüssige Barren aus seltenen Metallen."},
+      "secrets": [{"clue": "Der Zyklop hat eine Schwäche für gut gebrautes Zwergenbier.", "revelation": "Ein Fass Zwergenbier als Geschenk kann seine Laune erheblich verbessern."}],
+      "layout": {}
+    },
+    "connections": [
+      {"linkedHexId": "-9,3", "type": "discovered", "trigger": "Bringt Arges dazu, über seine besten Arbeiten zu sprechen.", "description": "Für seine besten Stücke, so murmelt Arges, benötigt er 'Sternenmetall', das nur von den höchsten Gipfeln stammt, wo die 'Schmieden seiner Väter' stehen.", "isRevealed": false},
+      {"linkedHexId": "-3,-9", "type": "discovered", "trigger": "Hört Arges' Gemurmel bei der Arbeit zu.", "description": "Arges murmelt manchmal von einem 'Fürsten der Fäulnis', dessen Zerstörung etwas 'noch Älteres' tief unter der Erde aufgeweckt hat.", "isRevealed": false}
+    ]
+  },
+  {
+    "poiId": {
+      "numeric": 34,
+      "code": "SB-LM-034"
+    },
+    "regionId": "reg_steinzahn_berge",
+    "name": "Vergessener Grenzstein",
+    "type": "Landmark",
+    "status": "undiscovered",
+    "description": "Ein alter, umgestürzter Grenzstein, der die Grenze zwischen dem Königreich der Menschen und dem alten Reich der Riesen markiert.",
+    "details": {
+      "objective": "Untersuche den Stein.",
+      "keyFeatures": ["Der Stein ist mit Runen der Menschen und der Riesen beschriftet.", "Er strahlt eine schwache, beruhigende Magie aus."],
+      "encounters": {},
+      "loot": {"main": "Wer die Runen beider Völker entziffern kann, versteht den alten Pakt und erhält einen permanenten Bonus von +1 auf alle Charisma-Proben gegenüber Riesen und Zyklopen.", "minor": null},
+      "secrets": [],
+      "layout": {}
+    },
+    "connections": []
+  },
+  {
+    "poiId": {
+      "numeric": 35,
+      "code": "DW-DU-035"
+    },
+    "regionId": "reg_duesterwald",
+    "name": "Der Schlund zur Unterwelt",
+    "type": "Dungeon",
+    "status": "undiscovered",
+    "description": "Ein riesiger, klaffender Abgrund, der sich nach der Zerstörung des Fürsten der Fäulnis aufgetan hat. Aus der Tiefe dringen unbeschreibliche Geräusche und ein kalter, toter Wind.",
+    "details": {
+      "objective": "Steige in die prähistorischen Tiefen hinab und versuche, den Riss zur Unterwelt zu versiegeln, bevor noch schrecklichere Dinge hindurchkommen.",
+      "keyFeatures": ["Die Umgebung ist absolut fremdartig und nicht-euklidisch.", "Verzerrte Realität: Fernkampfangriffe haben hier Nachteil. Zauber können unvorhergesehene Nebeneffekte haben.", "Der Abstieg ist ein Kampf gegen den eigenen Verstand."],
+      "encounters": {"main": "Ein 'Fragment des Chaos', eine körperlose Entität, die die Ängste der Charaktere gegen sie verwendet.", "secondary": "'Gedanken-Larven', 'Schatten-Tentakel' und andere Aberrationen."},
+      "loot": {"main": "Ein 'Herz der Leere', ein Artefakt, das entweder den Riss versiegeln oder für unvorstellbare Macht missbraucht werden kann.", "minor": "Kristalle, die mentale Energie speichern können."},
+      "secrets": [{"clue": "Einige Wände scheinen auf Willenskraft zu reagieren, nicht auf physische Kraft.", "revelation": "Starke mentale Konzentration kann neue Wege öffnen oder alte verschließen."}],
+      "layout": {}
+    },
+    "connections": []
+  }
+]
