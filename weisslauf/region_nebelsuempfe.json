@@ -1,0 +1,134 @@
+[
+  {
+    "hexId": "3,0",
+    "regionId": "reg_nebelsuempfe",
+    "tags": ["Sumpf", "Banditen", "Schwarzmarkt", "NPC"],
+    "terrain": "Tückisches Sumpfdelta",
+    "difficulty": 3,
+    "pointsOfInterest": [
+      {
+        "name": "Schwarzmarkt-Außenposten 'Treibgut'",
+        "type": "Sozial/Handel",
+        "description": "Ein auf Stelzen gebauter Handelsposten am Rande der Nebelsümpfe. Hier werden Waren umgeschlagen, bevor sie zum Haupt-Schwarzmarkt gelangen.",
+        "explored": false,
+        "details": {
+          "objective": "Finde den Kontaktmann der Flusspiraten, 'Schlick-Finger', um die Schatzkarte von Kapitänin Janna zu entschlüsseln oder zu verkaufen.",
+          "keyFeatures": ["Der Posten ist ein Labyrinth aus wackeligen Stegen.", "Jeder hier ist bewaffnet und misstrauisch.", "Ein korrupter Wächter aus Weisslauf kontrolliert den Zugang."],
+          "encounters": {
+            "main": "'Schlick-Finger' (ein aalglatter Halbling-Informationshändler) und seine zwei Oger-Leibwächter.",
+            "secondary": "Diverse Schmuggler, Banditen und eine rivalisierende Diebesgilde, die ebenfalls an der Karte interessiert ist."
+          },
+          "loot": {
+            "main": "Die entschlüsselte Information, wo der 'versunkene Schmugglerschatz' (Hex 4,0) liegt.",
+            "minor": "Möglichkeit, seltene Gifte und illegale Alchemie-Zutaten zu kaufen."
+          },
+          "secrets": [
+            {
+              "clue": "Ein Gesprächsfetzen verrät, dass 'Schlick-Finger' panische Angst vor Geistern hat (Lauschen ZW 13).",
+              "revelation": "Die Androhung, die Klerikerin Elara oder einen Geist auf ihn zu hetzen, kann ihn zu einem besseren Deal zwingen."
+            }
+          ],
+          "layout": {
+            "area1": {"name": "Die Anlegestelle", "description": "Ein schlammiger Bereich, wo Boote entladen werden. Wird von dem korrupten Wächter kontrolliert."},
+            "area2": {"name": "Der 'Marktplatz'", "description": "Eine zentrale Plattform mit Ständen, die gestohlene Waren und seltsame Sumpf-Delikatessen verkaufen."},
+            "area3": {"name": "Schlick-Fingers Kontor", "description": "Ein relativ stabiles Gebäude am Ende eines Stegs, bewacht von zwei Ogern."}
+          }
+        },
+        "rumors": ["Die Schatzkarte der Flusspiraten erwähnt einen Kontaktmann namens 'Schlick-Finger' in den Sümpfen."]
+      }
+    ],
+    "uniqueTreasure": null,
+    "encounters": [],
+    "resources": ["Sumpfgas", "Seltene Fische"],
+    "connections": [
+      {
+        "linkedHexId": "4,0",
+        "clue": "Schlick-Finger verrät (freiwillig oder gezwungen) die Position des 'versunkenen Schmugglerschatzes' weiter östlich im tiefsten Sumpf."
+      }
+    ]
+  },
+  {
+    "hexId": "3,1",
+    "regionId": "reg_nebelsuempfe",
+    "tags": ["Sumpf", "Ruine", "Kultisten", "Magie"],
+    "terrain": "Versunkene Ruinen im Sumpf",
+    "difficulty": 3,
+    "pointsOfInterest": [
+      {
+        "name": "Der Altar des gurgelnden Gottes",
+        "type": "Ritualplatz",
+        "description": "Inmitten einer versunkenen Tempelruine steht ein Obsidian-Altar, von dem ein unaufhörliches, gurgelndes Geräusch ausgeht. Kultisten in dunklen Roben führen hier ihre Riten durch.",
+        "explored": false,
+        "details": {
+          "objective": "Unterbrich das Ritual der Kultisten, die versuchen, eine Entität aus dem Wasser zu beschwören.",
+          "keyFeatures": ["Das Wasser um den Altar blubbert und ist unnatürlich warm.", "Die Kultisten sind in ihre Gesänge vertieft und anfangs unaufmerksam.", "Symbole auf dem Altar korrespondieren mit Sternenkonstellationen."],
+          "encounters": {
+            "main": "Ein 'Kult-Anführer' (Magier) und der teilweise beschworene 'Schlick-Schrecken' (ein amorphes Wasserwesen).",
+            "secondary": "4-6 Kultisten-Akolythen."
+          },
+          "loot": {
+            "main": "Ein 'Ritualdolch des tiefen Wassers', der unter Wasser atmen lässt.",
+            "minor": "Verbotene Texte über ozeanische Gottheiten."
+          },
+          "secrets": [
+            {
+              "clue": "Die Kultisten reagieren panisch auf das Symbol der Klerikerin Elara.",
+              "revelation": "Das Zeigen des heiligen Symbols unterbricht ihre Konzentration und schwächt die Beschwörung."
+            }
+          ],
+          "layout": {
+            "area1": {"name": "Versunkener Vorhof", "description": "Der Zugang zur Ruine, bewacht von zwei Kultisten."},
+            "area2": {"name": "Der Altarplatz", "description": "Eine offene Plattform mit dem Altar in der Mitte, um den die Kultisten ihr Ritual vollziehen."}
+          }
+        },
+        "rumors": ["Vom Schwarzmarkt hört man Gerüchte über eine Gruppe Verrückter, die im Osten einen 'ertrunkenen Gott' anbeten."]
+      }
+    ],
+    "uniqueTreasure": null,
+    "encounters": [],
+    "resources": ["Obsidian", "Seltene Wasserlilien"],
+    "connections": []
+  },
+  {
+    "hexId": "2,2",
+    "regionId": "reg_nebelsuempfe",
+    "tags": ["Sumpf", "Hexe", "NPC", "Magie", "Handel"],
+    "terrain": "Dichter Zypressensumpf",
+    "difficulty": 3,
+    "pointsOfInterest": [
+      {
+        "name": "Hütte der Sumpfhexe 'Grünspan'",
+        "type": "Sozial/Handel",
+        "description": "Eine auf riesigen Wurzeln gebaute Hütte, umgeben von leuchtenden Pilzen und seltsamen Pflanzen. Ein Steg führt durch das trübe Wasser zu ihrer Tür.",
+        "explored": false,
+        "details": {
+          "objective": "Handle mit der Hexe Grünspan, um mächtige Tränke, Flüche oder Informationen zu erhalten.",
+          "keyFeatures": ["Grünspan ist weder gut noch böse, sondern eine Geschäftsfrau.", "Sie verlangt seltsame Dinge als Bezahlung (eine Locke, eine Erinnerung, einen Gefallen).", "Ihre Hütte ist größer als sie von außen scheint."],
+          "encounters": {
+            "main": "Grünspan, die Sumpfhexe. Sie ist eine mächtige Magierin, die einen Kampf vermeiden wird, wenn möglich.",
+            "secondary": "Ihr 'Hauswächter', ein animierter Schlamm-Golem."
+          },
+          "loot": {
+            "main": "Die Möglichkeit, einzigartige Tränke zu kaufen oder einen Fluch auf einen Feind legen zu lassen.",
+            "minor": "Verkauf seltener Kräuter und alchemistischer Zutaten."
+          },
+          "secrets": [
+            {
+              "clue": "Grünspan sammelt Geschichten. Eine besonders gute oder traurige Geschichte beeindruckt sie.",
+              "revelation": "Für eine gute Geschichte gewährt sie einen Rabatt oder eine kostenlose kleine Weissagung."
+            }
+          ],
+          "layout": {
+            "area1": {"name": "Der Steg", "description": "Ein wackeliger Holzsteg, der zur Hütte führt. Unter der Oberfläche lauern Dinge."},
+            "area2": {"name": "Die Hütte", "description": "Ein vollgestopfter Raum mit Kesseln, Kräutern, Büchern und einem sprechenden Raben namens 'Poe'."}
+          }
+        },
+        "rumors": ["Grünspan lacht über die Dummheit des Brückentrolls 'Grummelstein', der die alte Steinbrücke im Süden (ein noch unentdecktes Hex) bewacht und sich leicht austricksen lässt."]
+      }
+    ],
+    "uniqueTreasure": null,
+    "encounters": [],
+    "resources": ["Magische Kräuter", "Pilze"],
+    "connections": []
+  }
+]
