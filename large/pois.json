@@ -54,15 +54,15 @@
       "code": "TW-SI-003"
     },
     "regionId": "reg_tal_von_weisslauf",
-    "name": "Die Grumel-Höfe",
+    "name": "Die Grummel-Höfe",
     "type": "Siedlung",
     "status": "undiscovered",
     "description": "Eine Ansammlung von drei kleinen, aber gepflegten Bauernhöfen, die Weisslauf mit Getreide und Gemüse versorgen.",
     "details": {
       "objective": "Kaufe frische Vorräte oder frage nach lokalen Problemen.",
       "keyFeatures": ["Die Bauern sind fleißig, aber wortkarg gegenüber Fremden.", "Wachhunde bellen bei jeder Annäherung."],
-      "encounters": {"main": "Bauer Grumel, der mürrische Sprecher der Höfe."},
-      "loot": {"main": "Bauer Grumel bietet eine kleine Belohnung, wenn man die Wölfe vertreibt, die nachts sein Vieh reißen.", "minor": "Möglichkeit, Rationen zu einem guten Preis zu kaufen."},
+      "encounters": {"main": "Bauer Grummel, der mürrische Sprecher der Höfe."},
+      "loot": {"main": "Bauer Grummel bietet eine kleine Belohnung, wenn man die Wölfe vertreibt, die nachts sein Vieh reißen.", "minor": "Möglichkeit, Rationen zu einem guten Preis zu kaufen."},
       "secrets": [],
       "layout": {}
     },
@@ -527,7 +527,7 @@
     },
     "connections": []
   },
-  {
+{
     "poiId": {
       "numeric": 26,
       "code": "NS-SI-026"
@@ -546,7 +546,8 @@
       "layout": {}
     },
     "connections": [
-      {"linkedHexId": "12,0", "type": "discovered", "trigger": "Bringt 'Schlick-Finger' dazu, die Schatzkarte zu entschlüsseln.", "description": "Schlick-Finger verrät (freiwillig oder gezwungen) die Position des 'versunkenen Schmugglerschatzes' weiter östlich im tiefsten Sumpf.", "isRevealed": false}
+      {"linkedHexId": "12,0", "type": "discovered", "trigger": "Bringt 'Schlick-Finger' dazu, die Schatzkarte zu entschlüsseln.", "description": "Schlick-Finger verrät (freiwillig oder gezwungen) die Position des 'versunkenen Schmugglerschatzes' weiter östlich im tiefsten Sumpf.", "isRevealed": false},
+      {"linkedHexId": "9,3", "type": "discovered", "trigger": "Hört den Gerüchten auf dem Markt zu.", "description": "Schmuggler erzählen, dass die Kultisten des 'gurgelnden Gottes' im Osten immer aggressiver werden, aus Furcht vor der wachsenden Macht der Sumpfmutter Isara.", "isRevealed": false}
     ]
   },
   {
@@ -618,7 +619,7 @@
     "name": "Der Altar des gurgelnden Gottes",
     "type": "Event",
     "status": "undiscovered",
-    "description": "Inmitten einer versunkenen Tempelruine steht ein Obsidian-Altar, von dem ein unaufhörliches, gurgelndes Geräusch ausgeht. Kultisten in dunklen Roben führen hier ihre Riten durch.",
+    "description": "Inmitten einer versunkenen Tempelruine steht ein Obsidian-Altar, von dem ein unaufhörliches, gurgelndes Geräusch ausgeht. Kultisten in dunklen Roben führen hier ihre Riten durch, in ständiger Furcht vor der Einmischung der Sumpfmutter Isara.",
     "details": {
       "objective": "Unterbrich das Ritual der Kultisten, die versuchen, eine Entität aus dem Wasser zu beschwören.",
       "keyFeatures": ["Das Wasser um den Altar blubbert und ist unnatürlich warm.", "Die Kultisten sind in ihre Gesänge vertieft und anfangs unaufmerksam.", "Symbole auf dem Altar korrespondieren mit Sternenkonstellationen."],
@@ -630,40 +631,34 @@
     "connections": []
   },
   {
-  "poiId": {
-    "numeric": 31,
-    "code": "NS-SI-031"
-  },
-  "regionId": "reg_nebelsuempfe",
-  "name": "Isaras Hütte",
-  "type": "Siedlung",
-  "status": "undiscovered",
-  "description": "Die Hütte von Isara, einer als 'verderbte Sumpfmutter' gefürchteten Hexe. Sie ist auf riesigen, verfaulten Wurzeln gebaut und von giftig leuchtenden Pilzen umgeben. Ein Steg aus Knochen und modrigem Holz führt durch das schwarze Wasser zu ihrer Tür.",
-  "details": {
-    "objective": "Handle mit Isara, um mächtige Gifte, Flüche oder verbotenes Wissen zu erhalten.",
-    "keyFeatures": [
-      "Isara ist weder gut noch böse, sondern eine unberechenbare, uralte Macht.",
-      "Sie verlangt seltsame, oft grausame Dinge als Bezahlung (ein Fingerglied, eine schmerzhafte Erinnerung, das Auge eines Feindes).",
-      "Ihre Hütte ist größer als sie von außen scheint."
-    ],
-    "encounters": {
-      "main": "Isara, die verdorbene Sumpfmutter. Eine uralte und mächtige Hexe.",
-      "secondary": "Ihr 'Hauswächter', ein aus Leichenteilen und Schlamm geformter Golem."
+    "poiId": {
+      "numeric": 31,
+      "code": "NS-SI-031"
     },
-    "loot": {
-      "main": "Die Möglichkeit, einzigartige Gifte zu kaufen oder einen schrecklichen Fluch auf einen Feind legen zu lassen.",
-      "minor": "Verkauf seltener, giftiger Kräuter und alchemistischer Zutaten."
+    "regionId": "reg_nebelsuempfe",
+    "name": "Isaras Hütte",
+    "type": "Siedlung",
+    "status": "undiscovered",
+    "description": "Die Hütte von Isara, einer als 'verderbte Sumpfmutter' gefürchteten Hexe. Sie ist auf riesigen, verfaulten Wurzeln gebaut und von giftig leuchtenden Pilzen umgeben. Ein Steg aus Knochen und modrigem Holz führt durch das schwarze Wasser zu ihrer Tür.",
+    "details": {
+      "objective": "Handle mit Isara, um mächtige Gifte, Flüche oder verbotenes Wissen zu erhalten.",
+      "keyFeatures": ["Isara ist weder gut noch böse, sondern eine unberechenbare, uralte Macht.", "Sie verlangt seltsame, oft grausame Dinge als Bezahlung (ein Fingerglied, eine schmerzhafte Erinnerung, das Auge eines Feindes).", "Ihre Hütte ist größer als sie von außen scheint."],
+      "encounters": {"main": "Isara, die verdorbene Sumpfmutter. Eine uralte und mächtige Hexe.", "secondary": "Ihr 'Hauswächter', ein aus Leichenteilen und Schlamm geformter Golem."},
+      "loot": {"main": "Die Möglichkeit, einzigartige Gifte zu kaufen oder einen schrecklichen Fluch auf einen Feind legen zu lassen.", "minor": "Verkauf seltener, giftiger Kräuter und alchemistischer Zutaten."},
+      "secrets": [
+        {"clue": "Isara sammelt Geheimnisse. Ein besonders dunkles oder schändliches Geheimnis beeindruckt sie.", "revelation": "Für ein solches Geheimnis gewährt sie einen Rabatt oder eine vage, beunruhigende Weissagung."},
+        {"clue": "Fragt man Isara nach anderen Mächten im Sumpf.", "revelation": "Sie spuckt verächtlich aus und verhöhnt die 'Würmer, die zu einem gurgelnden Pfuhl beten'. Sie hält sie für Narren, die es nicht wert sind, ihren Sumpf zu beschmutzen."}
+      ],
+      "layout": {}
     },
-    "secrets": [
+    "connections": [
       {
-        "clue": "Isara sammelt Geheimnisse. Ein besonders dunkles oder schändliches Geheimnis beeindruckt sie.",
-        "revelation": "Für ein solches Geheimnis gewährt sie einen Rabatt oder eine vage, beunruhigende Weissagung."
-      }
-    ],
-    "layout": {}
+        "linkedHexId": "5,-3",
+        "type": "discovered",
+        "trigger": "Bringt Isara dazu, über die Dummheit anderer zu sprechen.",
+        "description": "Isara lacht heiser und erzählt spöttisch von der Dummheit des Brückentrolls 'Faulstumpf', der eine alte Steinbrücke im Süden bewacht und sich leicht austricksen lässt.",
+        "isRevealed": false
   },
-  "connections": []
-},
   {
     "poiId": {
       "numeric": 32,
