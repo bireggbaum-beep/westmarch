@@ -739,8 +739,7 @@
       "loot": {"main": "Ein 'Herz der Leere', ein Artefakt, das entweder den Riss versiegeln oder für unvorstellbare Macht missbraucht werden kann.", "minor": "Kristalle, die mentale Energie speichern können."},
       "secrets": [{"clue": "Einige Wände scheinen auf Willenskraft zu reagieren, nicht auf physische Kraft.", "revelation": "Starke mentale Konzentration kann neue Wege öffnen oder alte verschließen."}],
       "layout": {}
-    }
+    },
     "connections": []
-  }
-}
+   }
 ]
